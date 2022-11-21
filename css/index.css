@@ -1,15 +1,167 @@
-/* Main Page */
+/* --------- MAIN PAGE --------- */
+
+/* --------- Start Header --------- */
 
 /* Header Photo */
 .main-photo {
     position: relative;
+
     text-align: center;
-    padding: 10vw;
+
+    padding-top: 13vw;
+    padding-bottom: 6vw;
 }
 
-/* Line under the photo */
+.main-photo img {
+    width: 60%;
+    height: 10%;
+}
+
+/* Date under header photo */
+.main-date {
+    text-align: center;
+
+    padding-bottom: 3vw;
+
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* Line under header photo */
 .main-line {
     position: relative;
+
     width: 70%;
+
     margin: auto;
 }
+
+/* --------- End Header --------- */
+
+/* --------- Start Boxes --------- */
+
+.main-box-1 {
+    margin: 2vh;
+}
+
+.main-box-text-summary {
+    padding-left: 1vh;
+    padding-bottom: 1vw;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main-box-summary {
+    display: flex;
+
+    height: fit-content;
+
+    background: #F9F3F3;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+/* Start Box Summary Left */
+
+.main-box-summary-left {
+    padding: 1vh;
+
+    width: 50%;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+/* Start Reaching Score */
+
+.main-box-summary-left-header-text {
+    font-weight: 700;
+    font-size: 16px;
+
+    border-right: 1px solid #D1D1D6;
+    
+    padding-left: 1vh;
+}
+
+.main-box-summary-left-over-reaching-score {
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #848484;
+
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+}
+
+/* End Reaching Score */
+
+/* Start Rest Time */
+
+.main-box-summary-left-header-text-rest {
+    font-weight: 700;
+    font-size: 16px;
+
+    padding-left: 1vh;
+}
+
+.main-box-summary-left-over-rest-time {
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #848484;
+    padding-left: 1vh;
+}
+
+/* End Rest Time */
+
+.main-box-summary-right {
+    padding: 1vh;
+
+    width: 50%;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+.main-box-summary-right-header-text {
+    font-weight: 700;
+    font-size: 16px;
+
+    border-right: 1px solid #D1D1D6;
+    
+    text-align: center;
+}
+
+.main-box-summary-right-button {
+    background-color: #000000;
+    color: white;
+
+    font-weight: 600;
+    font-size: 8px;
+
+    border-radius: 4vh;
+    padding: 5px;
+}
+
+.main-box-summary-right-text {
+    margin-top: 1vw;
+
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.4px;
+}
+
+/* End Box Summary Left */
+
+/* Start Box Summary Right */
+
+.main-box-summary-right {
+    width: 50%;
+    height: 100%;
+}
+
+/* End Box Summary Right */
+
+/* --------- End Boxes --------- */
