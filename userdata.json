@@ -1,0 +1,15 @@
+{
+    "admin" : {
+        "password":"admin",
+        "birthday":"01-01-2000",
+        "gender":"undefined",
+        "statistics" : {
+            "HeartRate": 85,
+            "HRMax": -1,
+            "HRV": 29,
+            "RestingHR": 68,
+            "HRZone": -1,
+            "SleepTime": 6.1
+        }
+    }
+}

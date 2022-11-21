@@ -1,0 +1,113 @@
+hr {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+.user {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+    height: 250px;
+}
+
+.user .name {
+    padding-left: 100px;
+    width: 50%;
+    font-size: 85px;
+    font-weight: bolder;
+    line-height: 90%;
+}
+
+.user .profilepic {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.user .profilepic img {
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.track-work {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.track-work #title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.track-work #content {
+    font-size: 35px;
+    font-weight: 700;
+    color: gray
+}
+
+.track-work .track {
+    width: 50%;
+}
+
+.track-work .work {
+    width: 50%;
+}
+
+.work-capacity {
+    margin-top: 160px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 85px;
+}
+
+.work-capacity .title {
+    padding-left: 100px;
+    display: flex;
+    width: 40%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.work-capacity .statistic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: lightgray;
+    border-radius: 200px;
+}
+
+.pulse-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 60%;
+    background-color: rgb(74, 211, 74);
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.pulse-index .title {
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    font-size: 50px;
+    font-weight: bold;
+}
