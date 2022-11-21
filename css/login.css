@@ -45,10 +45,13 @@
     height: 10vw;
 }
 
+#submit {
+    margin-top: 6vw;
+    background-color: rgb(226, 226, 226);
+}
+
 .login-div > input:hover {
     background-color: rgb(197, 197, 197);
     border: none;
     outline: none;
 }
-
-.login-div > #submit
