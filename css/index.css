@@ -1,0 +1,15 @@
+/* Main Page */
+
+/* Header Photo */
+.main-photo {
+    position: relative;
+    text-align: center;
+    padding: 10vw;
+}
+
+/* Line under the photo */
+.main-line {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
