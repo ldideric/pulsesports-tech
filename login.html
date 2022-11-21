@@ -6,10 +6,23 @@
     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="./img/image.png" alt="LOGO">
-        </div>
+
+    <img src="./img/image.png" alt="" class="header-photo">
+
+    <div class="logo-div">
+        <img class="logo-img" src="./img/logo.png">
     </div>
+
+    <hr class="main-line">
+
+    <form action="index.html">
+        <div class="login-div">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" placeholder="user" value="admin">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="password">
+            <input type="submit" name="login-button" id="submit" value="login">
+        </div>
+    </form>
 </body>
 </html>
