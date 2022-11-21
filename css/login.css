@@ -30,28 +30,40 @@
     margin: 2vw;
 }
 
-.login-div > label {
-    font-size:8vw;
-}
-
 .login-div > input {
-    text-align: center;
+    padding-left: 3vw;
     background-color: rgb(235, 235, 235);
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 6vw;
+    border-radius: 1vh;
+    font-size: 3vw;
     width: 70vw;
     height: 10vw;
 }
 
 #submit {
-    margin-top: 6vw;
-    background-color: rgb(226, 226, 226);
+    font-size: 4vw;
+    color: white;
+    margin-top: 12vw;
+    background-color: #0DA2FF;
 }
 
 .login-div > input:hover {
     background-color: rgb(197, 197, 197);
     border: none;
     outline: none;
+}
+
+#forgot-pw {
+    margin-right: 15vw;
+    font-size: 2vw;
+    align-self: flex-end;
+}
+
+#signup {
+    font-size: 3vw;
+}
+
+.link {
+    color: #0DA2FF;
 }

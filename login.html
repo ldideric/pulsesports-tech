@@ -4,10 +4,11 @@
     <title>PULSE Login</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/login.css">
+    <script src="js/login.js"></script>
 </head>
 <body>
 
-    <img src="./img/image.png" alt="" class="header-photo">
+    <img src="./img/image.png" alt="header" class="header-photo">
 
     <div class="logo-div">
         <img class="logo-img" src="./img/logo.png">
@@ -15,13 +16,13 @@
 
     <hr class="main-line">
 
-    <form action="index.html">
+    <form action="./index.html">
         <div class="login-div">
-            <label for="username">username</label>
-            <input type="text" name="username" id="username" placeholder="user" value="admin">
-            <label for="password">password</label>
-            <input type="password" name="password" id="password" placeholder="password">
-            <input type="submit" name="login-button" id="submit" value="login">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <div id="forgot-pw">Forgot password?</div>
+            <input type="submit" name="login-button" id="submit" value="Sign In" onsubmit="saveLogin()">
+            <div id="signup">Don't have an account? <span class="link">Sign up</span> here.</div>
         </div>
     </form>
 </body>
