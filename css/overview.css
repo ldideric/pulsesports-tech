@@ -5,6 +5,10 @@ hr {
     width: 70%;
 }
 
+.containers {
+    margin-bottom: 15vh;
+}
+
 .user {
     margin-top: 30px;
     display: flex;
@@ -81,15 +85,16 @@ hr {
 
 .work-capacity .statistic {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
-    width: 60%;
+    width: 45%;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     background-color: lightgray;
-    border-radius: 200px;
+    border-radius: 300px;
 }
 
 .pulse-index {
@@ -97,7 +102,7 @@ hr {
     justify-content: center;
     align-items: center;
     height: 500px;
-    width: 60%;
+    width: 50%;
     background-color: rgb(74, 211, 74);
     border-radius: 100%;
     margin: auto;
@@ -110,4 +115,67 @@ hr {
     width: 30%;
     font-size: 50px;
     font-weight: bold;
+}
+
+.buttons{
+    height: 1vh !important;
+    width: 1.1vh !important;
+    border-radius: 100% !important;
+    z-index: 0 !important;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.navbarfade {
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0, 0), rgb(255, 255, 255) 100%);
+    width: 100%;
+    height: 2vh;
+}
+
+.navbarbox {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seperator {
+    height: 0.1vh;
+    width: 60vw;
+    margin-top: 1vh;
+    background-color: #000000;
+    opacity: 16%;
+}
+
+.navitems {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 3vh;
+    height: 3vh;
+    fill: #848484;
+}
+
+.icontext {
+    font-weight: 500;
+    font-size: 1.18vh;
 }
