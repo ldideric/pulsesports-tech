@@ -3,10 +3,17 @@
     const logostyle = window.getComputedStyle(logo);
     const logoparent = logo.parentElement;
 
-    logoparent.style.padding = '5vw';
+    const date = document.querySelector('.main-date p');
+    const mainboxes = document.querySelector('.main-boxes');
+
+    logoparent.style.padding = '3vw';
+    date.style.marginRight = '0vw';
+    mainboxes.style.marginTop = '0vh';
     if (localStorage.getItem('logotransition') == 'true') {
         localStorage.setItem('logotransition', 'false');
     } else {
         logoparent.style.transition = 'none';
+        date.style.transition = 'none';
+        mainboxes.style.transition = 'none';
     }
 }());

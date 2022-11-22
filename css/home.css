@@ -3,15 +3,12 @@
 /* --------- Start Header --------- */
 
 /* Header Photo */
-.main-content-main {
-    margin-bottom: 4vh;
-}
 
 .logo-div {
     position: relative;
     text-align: center;
     padding: 10vw;
-    transition: 1.5s padding ease-out;
+    transition: 1.8s padding ease-out;
 }
 
 .logo-img {
@@ -29,6 +26,11 @@
     font-size: 13px;
 }
 
+.main-date p {
+    margin-right: 50vw;
+    transition: 1.5s margin-right ease;
+}
+
 /* Line under header photo */
 .main-line {
     position: relative;
@@ -41,6 +43,10 @@
 /* --------- End Header --------- */
 
 /* --------- Start Boxes --------- */
+.main-boxes {
+    margin-top: 70vh;
+    transition: 1.5s margin-top ease;
+}
 
 .main-box-1 {
     margin: 2vh;
@@ -281,7 +287,7 @@
 .main-button-full-report {
     display: block;
 
-    margin-top: 10vw;
+    margin-top: 9vw;
     margin-left: auto;
     margin-right: auto;
 
