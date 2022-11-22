@@ -1,0 +1,40 @@
+{
+    "short_name": "PULSE",
+    "name": "PULSE Sport",
+    "icons": [
+      {
+        "src": "images/dummy_192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
+      },
+      {
+        "src": "images/dummy_512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#0DA2FF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#0DA2FF",
+    "shortcuts": [
+      {
+        "name": "Insights in your data",
+        "short_name": "Insights",
+        "description": "View the daily insights about your body",
+        "url": "/overview.html",
+        "icons": [{ "src": "images/dummy_192.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "dummytext",
+    "screenshots": [
+      {
+        "src": "images/dummy_512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }

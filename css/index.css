@@ -1,227 +1,75 @@
-/* --------- MAIN PAGE --------- */
 
-/* --------- Start Header --------- */
-
-/* Header Photo */
-.main-photo {
+/* Logo */
+.logo-div {
     position: relative;
-
     text-align: center;
-
-    padding-top: 13vw;
-    padding-bottom: 6vw;
+    padding: 10vw;
 }
 
-.main-photo img {
-    width: 60%;
-    height: 10%;
+.logo-img {
+    margin-top: 15vw;
+    width: 70%;
 }
 
-/* Date under header photo */
-.main-date {
-    text-align: center;
-
-    padding-bottom: 3vw;
-
-    font-weight: 400;
-    font-size: 13px;
-}
-
-/* Line under header photo */
+/* Line */
 .main-line {
     position: relative;
-
     width: 70%;
-
     margin: auto;
 }
 
-/* --------- End Header --------- */
-
-/* --------- Start Boxes --------- */
-
-.main-box-1 {
-    margin: 2vh;
-}
-
-.main-box-text-summary {
-    padding-left: 1vh;
-    padding-bottom: 1vw;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.main-box-summary {
+/* Login */
+.login-div {
+    padding-top: 15vw;
     display: flex;
-
-    height: fit-content;
-
-    background: #F9F3F3;
-
-    border: 1px solid #000000;
-    border-radius: 20px;
-}
-
-/* Start Box Summary Left */
-
-.main-box-summary-left {
-    padding: 1vh;
-
-    width: 50%;
-    height: 100%;
-
     flex-direction: column;
+    align-items: center;
 }
 
-/* Start Reaching Score */
-
-.main-box-summary-left-header-text {
-    font-weight: 700;
-    font-size: 16px;
-
-    border-right: 1px solid #D1D1D6;
-    
-    padding-left: 1vh;
+.login-div > * {
+    margin: 2vw;
 }
 
-.main-box-summary-left-over-reaching-score {
-    font-weight: 700;
-    font-size: 24px;
-
-    color: #848484;
-
-    padding-bottom: 1vh;
-    padding-left: 1vh;
+.login-div > input {
+    padding-left: 3vw;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    outline: none;
+    border-radius: 1vh;
+    font-size: 3vw;
+    width: 70vw;
+    height: 10vw;
 }
 
-/* End Reaching Score */
-
-/* Start Rest Time */
-
-.main-box-summary-left-header-text-rest {
-    font-weight: 700;
-    font-size: 16px;
-
-    padding-left: 1vh;
-}
-
-.main-box-summary-left-over-rest-time {
-    font-weight: 700;
-    font-size: 24px;
-
-    color: #848484;
-    padding-left: 1vh;
-}
-
-/* End Rest Time */
-
-.main-box-summary-right {
-    padding: 1vh;
-
-    width: 50%;
-    height: 100%;
-
-    flex-direction: column;
-}
-
-.main-box-summary-right-header-text {
-    font-weight: 700;
-    font-size: 16px;
-
-    border-right: 1px solid #D1D1D6;
-    
-    text-align: center;
-}
-
-.main-box-summary-right-button {
-    background-color: #000000;
+#submit {
+    font-size: 4vw;
     color: white;
-
-    font-weight: 600;
-    font-size: 8px;
-
-    border-radius: 4vh;
-    padding: 5px;
+    margin-top: 12vw;
+    background-color: #0DA2FF;
 }
 
-.main-box-summary-right-text {
-    margin-top: 1vw;
-
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 16px;
-    letter-spacing: -0.4px;
+.login-div > input:hover {
+    background-color: rgb(197, 197, 197);
+    border: none;
+    outline: none;
 }
 
-/* End Box Summary Left */
-
-/* Start Box Summary Right */
-
-.main-box-summary-right {
-    width: 50%;
-    height: 100%;
+#forgot-pw {
+    margin-right: 15vw;
+    font-size: 2vw;
+    align-self: flex-end;
 }
-
-/* End Box Summary Right */
-
-/* Navbar */
 
 .navbar {
-    /* background-color: red; */
     width: 100%;
     position: fixed;
     bottom: 0;
 }
 
-.navbarfade {
-    background-image: linear-gradient(to bottom, rgb(255, 0, 0, 0), rgb(255, 255, 255) 100%);
-    width: 100%;
-    height: 2vh;
+#signup {
+    font-size: 3vw;
 }
 
-.navbarbox {
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.link {
+    color: #0DA2FF;
 }
-
-.seperator {
-    height: 0.1vh;
-    width: 60vw;
-    margin-top: 1vh;
-    background-color: #000000;
-    opacity: 16%;
-}
-
-.navitems {
-    margin-top: 2vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navitem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon {
-    width: 3vh;
-    height: 3vh;
-    fill: #848484;
-}
-
-.icontext {
-    font-weight: 500;
-    font-size: 1.18vh;
-}
-
-/* end navbar */
-
-
-
-/* --------- End Boxes --------- */

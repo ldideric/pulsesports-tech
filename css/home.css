@@ -1,0 +1,340 @@
+/* --------- MAIN PAGE --------- */
+
+/* --------- Start Header --------- */
+
+/* Header Photo */
+.main-photo {
+    position: relative;
+
+    text-align: center;
+
+    padding-top: 13vw;
+    padding-bottom: 6vw;
+}
+
+.main-photo img {
+    width: 60%;
+    height: 10%;
+}
+
+/* Date under header photo */
+.main-date {
+    text-align: center;
+
+    padding-bottom: 3vw;
+
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* Line under header photo */
+.main-line {
+    position: relative;
+
+    width: 70%;
+
+    margin: auto;
+}
+
+/* --------- End Header --------- */
+
+/* --------- Start Boxes --------- */
+
+.main-box-1 {
+    margin: 2vh;
+}
+
+.main-box-text-summary {
+    padding-left: 1vh;
+    padding-bottom: 1vw;
+
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main-box-summary {
+    display: flex;
+
+    height: fit-content;
+
+    background: #F9F3F3;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+/* Start Box Summary Left */
+
+.main-box-summary-left {
+    padding: 1vh;
+
+    width: 50%;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+/* Start Reaching Score */
+
+.main-box-summary-left-header-text {
+    font-weight: 700;
+    font-size: 16px;
+
+    border-right: 1px solid #D1D1D6;
+    
+    padding-left: 1vh;
+}
+
+.main-box-summary-left-over-reaching-score {
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #848484;
+
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+}
+
+/* End Reaching Score */
+
+/* Start Rest Time */
+
+.main-box-summary-left-header-text-rest {
+    font-weight: 700;
+    font-size: 16px;
+
+    padding-left: 1vh;
+}
+
+.main-box-summary-left-over-rest-time {
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #848484;
+    padding-left: 1vh;
+}
+
+/* End Rest Time */
+
+.main-box-summary-right {
+    padding: 1vh;
+
+    width: 50%;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+.main-box-summary-right-header-text {
+    font-weight: 700;
+    font-size: 16px;
+
+    border-right: 1px solid #D1D1D6;
+    
+    text-align: center;
+}
+
+.main-box-summary-right-button {
+    background-color: #000000;
+    color: white;
+
+    font-weight: 600;
+    font-size: 8px;
+
+    border-radius: 4vh;
+    padding: 5px;
+}
+
+.main-box-summary-right-text {
+    margin-top: 1vw;
+
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.4px;
+}
+
+/* End Box Summary Left */
+
+/* Start Box Summary Right */
+
+.main-box-summary-right {
+    width: 50%;
+    height: 100%;
+}
+
+/* End Box Summary Right */
+
+.main-box-2 {
+    margin: 2vh;
+}
+
+.main-box2-text-workouts {
+    text-align: right;
+
+    padding-top: 2vh;
+    padding-right: 1vh;
+    padding-bottom: 1vw;
+
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main-box-workouts {
+    padding: 2vh;
+
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+
+    background: #F9F3F3;
+
+    border-radius: 20px;
+}
+
+.main-box-workouts-text {
+    font-weight: 300;
+    font-size: 14px;
+
+    width: 100%;
+}
+
+
+.main-box-workouts-text-bold {
+    font-weight: 500;
+}
+
+.main-box-workouts-date {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 2vh;
+}
+
+.main-box-workouts-date-box {
+    position: flex;
+
+    width: 13vw;
+    height: 7vh;
+
+    background: #F1F3FA;
+    border-radius: 15px;
+
+    margin: 1vh;
+    padding-top: 2vw;
+}
+
+.main-box-workouts-date-day {
+    font-weight: 400;
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #9FA2AE;
+}
+
+.main-box-workouts-date-date {
+    position: relative;
+
+    text-align: center;
+    
+    transform: translateY(50%);
+
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.main-box-workouts-date-active {
+    background-color: #242223;
+}
+
+.main-box-workouts-date-day-active {
+    color: white;
+}
+
+.main-box-workouts-date-date-active {
+    color: #FFFFFF;
+    opacity: 0.2;
+}
+
+.main-button-full-report {
+    display: block;
+
+    margin-top: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 13px 20px;
+
+    font-weight: 600;
+    font-size: 17px;
+
+    border: none;
+    border-radius: 2vh;
+
+    background-color: #000000;
+    color: white;
+}
+
+/* --------- End Boxes --------- */
+
+/* --------- Start Navbar --------- */
+
+.navbar {
+    /* background-color: red; */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbarfade {
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0, 0), rgb(255, 255, 255) 100%);
+    width: 100%;
+    height: 2vh;
+}
+
+.navbarbox {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seperator {
+    height: 0.1vh;
+    width: 60vw;
+    margin-top: 1vh;
+    background-color: #000000;
+    opacity: 16%;
+}
+
+.navitems {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 3vh;
+    height: 3vh;
+    fill: #848484;
+}
+
+.icontext {
+    font-weight: 500;
+    font-size: 1.18vh;
+}
+
+/* --------- End Navbar --------- */
