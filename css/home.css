@@ -7,7 +7,7 @@
 .logo-div {
     position: relative;
     text-align: center;
-    padding: 3vw;
+    padding: 10vw;
     transition: 1.3s padding ease-out;
 }
 
