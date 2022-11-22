@@ -311,6 +311,10 @@
     height: 2vh;
 }
 
+.main-button-full-report {
+    margin-bottom: 15vh;
+}
+
 .navbarbox {
     background-color: #FFFFFF;
     width: 100%;
