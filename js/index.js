@@ -5,3 +5,8 @@ function saveLogin() {
 }
 
 localStorage.setItem('logotransition', 'true');
+
+
+// for the javascript navigator:
+//     https://link.link#home etc.
+console.log(navigator);
