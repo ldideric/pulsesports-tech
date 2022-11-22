@@ -9,9 +9,9 @@
 
 /* Header photo */
 .header-photo {
-    /* background-color: white; */
     background-image: linear-gradient(to top, rgb(255, 0, 0, 0), rgb(255, 255, 255) 25%);
     position: fixed;
     top: 0;
     width: 100%;
-}
+    display: none;
+} 
