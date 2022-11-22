@@ -44,6 +44,12 @@ body {
     height: 10vw;
 }
 
+.login-div .outputtext {
+    display: none;
+    color: red;
+    font-size: 3.8vw;
+}
+
 #submit {
     font-size: 4vw;
     color: white;

@@ -5,7 +5,8 @@
     <!-- CSS and JavaScript Files -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/data.js"></script>
     <!-- Responsive Web App -->
     <link rel="manifest" href="/manifest.json">
     <script src="js/loadServiceWorker.js"></script>
@@ -30,8 +31,9 @@
     <div class="login-div">
         <input type="text" name="username" id="username" placeholder="Username">
         <input type="password" name="password" id="password" placeholder="Password">
+        <p class="outputtext">Username or password incorrect</p>
         <div id="forgot-pw">Forgot password?</div>
-        <input type="button" name="login-button" id="submit" value="Sign In" onclick="saveLogin()">
+        <input type="button" name="login-button" id="submit" value="Sign In">
         <div id="signup">Don't have an account? <span class="link">Sign up</span> here.</div>
     </div>
 </body>
