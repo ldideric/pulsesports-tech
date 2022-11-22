@@ -59,8 +59,11 @@
 
     background: #F9F3F3;
 
-    border: 1px solid #000000;
     border-radius: 20px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
 }
 
 /* Start Box Summary Left */
@@ -128,20 +131,21 @@
 .main-box-summary-right-header-text {
     font-weight: 700;
     font-size: 16px;
-
-    border-right: 1px solid #D1D1D6;
     
     text-align: center;
 }
 
 .main-box-summary-right-button {
-    background-color: #000000;
+    background-color: #123456;
     color: white;
 
     font-weight: 600;
     font-size: 8px;
+    font-weight: bold;
 
     border-radius: 4vh;
+    border: none;
+
     padding: 5px;
 }
 
@@ -191,6 +195,10 @@
     background: #F9F3F3;
 
     border-radius: 20px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
 }
 
 .main-box-workouts-text {
@@ -220,11 +228,15 @@
     width: 13vw;
     height: 7vh;
 
-    background: #F1F3FA;
+    background: white;
     border-radius: 15px;
 
     margin: 1vh;
     padding-top: 2vw;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
 }
 
 .main-box-workouts-date-day {
@@ -248,7 +260,11 @@
 }
 
 .main-box-workouts-date-active {
-    background-color: #242223;
+    background-color: #123456;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
 }
 
 .main-box-workouts-date-day-active {
@@ -257,7 +273,7 @@
 
 .main-box-workouts-date-date-active {
     color: #FFFFFF;
-    opacity: 0.2;
+    opacity: 0.7;
 }
 
 .main-button-full-report {
@@ -275,8 +291,12 @@
     border: none;
     border-radius: 2vh;
 
-    background-color: #000000;
+    background-color: #123456;
     color: white;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.43);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.43);
 }
 
 /* --------- End Boxes --------- */
