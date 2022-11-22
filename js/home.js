@@ -1,12 +1,12 @@
 (function main() {
     const logo = document.querySelector('.logo-img');
-    const logostyle = window.getComputedStyle(logo);
     const logoparent = logo.parentElement;
 
     const date = document.querySelector('.main-date p');
     const mainboxes = document.querySelector('.main-boxes');
 
     logoparent.style.padding = '3vw';
+    date.style.fontSize = '13px';
     date.style.marginRight = '0vw';
     mainboxes.style.marginTop = '0vh';
     if (localStorage.getItem('logotransition') == 'true') {
