@@ -97,27 +97,111 @@ hr {
     border-radius: 300px;
 }
 
-.pulse-index {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 50%;
-    background-color: rgb(74, 211, 74);
-    border-radius: 100%;
-    margin: auto;
-    margin-top: 120px;
-}
 
-.pulse-index .title {
-    text-align: center;
-    height: 30%;
-    width: 30%;
+.WorkCapacityCircle {
+    height: 400px;
+    width: 45%;
+
     font-size: 50px;
     font-weight: bold;
 }
 
+.StepsCircle {
+    height: 400px;
+    width: 45%;
+
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.KCALCircle {
+    height: 400px;
+    width: 45%;
+
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.pulse-index-circle {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 400px;
+    width: 45%;
+}
+
+.pulse-index-circle > p {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    
+    color: black;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    transform: translate(-50%, -50%);
+}
+
+.HeartRate-circle {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 400px;
+    width: 45%;
+}
+
+.HeartRate-circle > p {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    
+    color: black;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    transform: translate(-50%, -50%);
+}
+
+.SleepTime-circle {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 400px;
+    width: 45%;
+}
+
+.SleepTime-circle > p {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    
+    color: black;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    transform: translate(-50%, -50%);
+}
+
+.test {
+    height: 450px;
+}
+
 .buttons{
+    height: 1vh !important;
+    width: 1.1vh !important;
+    border-radius: 100% !important;
+    z-index: 0 !important;
+}
+
+.buttons2{
+    position: relative;
+    top: 3vh !important;
     height: 1vh !important;
     width: 1.1vh !important;
     border-radius: 100% !important;
