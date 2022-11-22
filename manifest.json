@@ -28,13 +28,5 @@
         "url": "/overview.html",
         "icons": [{ "src": "images/dummy_192.png", "sizes": "192x192" }]
       }
-    ],
-    "description": "dummytext",
-    "screenshots": [
-      {
-        "src": "images/dummy_512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
     ]
   }
