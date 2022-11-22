@@ -47,6 +47,7 @@
 .main-box-text-summary {
     padding-left: 1vh;
     padding-bottom: 1vw;
+
     font-weight: 600;
     font-size: 24px;
 }
@@ -164,7 +165,123 @@
 
 /* End Box Summary Right */
 
-/* Navbar */
+.main-box-2 {
+    margin: 2vh;
+}
+
+.main-box2-text-workouts {
+    text-align: right;
+
+    padding-top: 2vh;
+    padding-right: 1vh;
+    padding-bottom: 1vw;
+
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main-box-workouts {
+    padding: 2vh;
+
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+
+    background: #F9F3F3;
+
+    border-radius: 20px;
+}
+
+.main-box-workouts-text {
+    font-weight: 300;
+    font-size: 14px;
+
+    width: 100%;
+}
+
+
+.main-box-workouts-text-bold {
+    font-weight: 500;
+}
+
+.main-box-workouts-date {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 2vh;
+}
+
+.main-box-workouts-date-box {
+    position: flex;
+
+    width: 13vw;
+    height: 7vh;
+
+    background: #F1F3FA;
+    border-radius: 15px;
+
+    margin: 1vh;
+    padding-top: 2vw;
+}
+
+.main-box-workouts-date-day {
+    font-weight: 400;
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #9FA2AE;
+}
+
+.main-box-workouts-date-date {
+    position: relative;
+
+    text-align: center;
+    
+    transform: translateY(50%);
+
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.main-box-workouts-date-active {
+    background-color: #242223;
+}
+
+.main-box-workouts-date-day-active {
+    color: white;
+}
+
+.main-box-workouts-date-date-active {
+    color: #FFFFFF;
+    opacity: 0.2;
+}
+
+.main-button-full-report {
+    display: block;
+
+    margin-top: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 13px 20px;
+
+    font-weight: 600;
+    font-size: 17px;
+
+    border: none;
+    border-radius: 2vh;
+
+    background-color: #000000;
+    color: white;
+}
+
+/* --------- End Boxes --------- */
+
+/* --------- Start Navbar --------- */
 
 .navbar {
     /* background-color: red; */
@@ -220,8 +337,4 @@
     font-size: 1.18vh;
 }
 
-/* end navbar */
-
-
-
-/* --------- End Boxes --------- */
+/* --------- End Navbar --------- */
