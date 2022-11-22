@@ -3,18 +3,33 @@
 /* --------- Start Header --------- */
 
 /* Header Photo */
+.main-content-main {
+    margin-bottom: 80px;
+}
+/* 
 .main-photo {
     position: relative;
 
     text-align: center;
 
-    padding-top: 13vw;
     padding-bottom: 6vw;
 }
 
 .main-photo img {
     width: 60%;
     height: 10%;
+} */
+
+/* Logo */
+.logo-div {
+    position: relative;
+    text-align: center;
+    /* padding: 10vw; */
+}
+
+.logo-img {
+    margin-top: 15vw;
+    width: 70%;
 }
 
 /* Date under header photo */
