@@ -35,8 +35,3 @@ function showError(error) {
     output.style.display = 'inline';
     output.textContent = error;
 }
-
-
-// for the javascript navigator:
-//     https://link.link#home etc.
-console.log(navigator);

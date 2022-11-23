@@ -7,7 +7,7 @@
             "01-01-2000" : {
                 "statistics" : {
                     "HeartRate": 85,
-                    "HRMax": -1,
+                    "HRMax": 200,
                     "HRV": 29,
                     "RestingHR": 68,
                     "HRZone": -1,
