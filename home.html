@@ -27,12 +27,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
-    <img src="./img/image.png" alt="header" class="header-photo">
-    
+
+    <div class="popup">
+        <button class="popup-close-button" onclick="GetInfoReaching()">X</button>
+        <p class="popup-title">Summary</p>
+        <p class="popup-text">You have attained high levels of over-reaching. Your coach suggests 2-3 days off to let your body & mind recover. Check out the full report for a detailed view.</p>
+    </div>
+
     <div class="main-content-main">
         <!-- Start Header -->
         <div class="logo-div">
-            <img class="logo-img" src="./img/logo.png">
+            <img class="logo-img" src="../img/logo.png">
         </div>
         <div class="main-date">
             <p>Wednesday 13 Jul</p>
@@ -40,76 +45,61 @@
         <hr class="main-line">
         <!-- End Header -->
 
-        <!-- Start Boxes -->
-        <div class="main-boxes">
-            <div class="main-box-1">
-                <h4 class="main-box-text-summary">Summary</h4>
-                <div class="main-box-summary">
-                    <div class="main-box-summary-left">
-                        <div>
-                            <h2 class="main-box-summary-left-header-text">Over-reaching score</h2>
-                            <h2 class="main-box-summary-left-over-reaching-score">55,8</h2>
-                        </div>
-
-                        <div>
-                            <h2 class="main-box-summary-left-header-text-rest">Rest needs</h2>
-                            <h2 class="main-box-summary-left-over-rest-time">2-3 days</h2>
-                        </div>
-                    </div>
-
-                    <div class="main-box-summary-right">
-                        <div>
-                            <h2 class="main-box-summary-right-header-text">TO-DO</h2>
-                            <button class="main-box-summary-right-button">
-                                Complete Mental Health Survey
-                            </button>
-                            <p class="main-box-summary-right-text">
-                                You have attained high levels of over-reaching. Your coach suggests 2-3 days off to let your body & mind recover. Check out the full report for a detailed view.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-box-2">
-                <h4 class="main-box2-text-workouts">Workouts</h4>
-                <div class="main-box-workouts">
-                    <p class="main-box-workouts-text">
-                        Sport: <span class="main-box-workouts-text-bold">Strenght Training, Fitness & HIIT</span><br>
-                        Level: <span class="main-box-workouts-text-bold">Semi-professional</span><br>
-                        Next recommended session:
-                    </p>
-                    <div class="main-box-workouts-date">
-                        <div class="main-box-workouts-date-box">
-                            <p class="main-box-workouts-date-day">Wed</p>
-                            <h4 class="main-box-workouts-date-date">14</h4>
-                        </div>
-                        <div class="main-box-workouts-date-box">
-                            <p class="main-box-workouts-date-day">Wed</p>
-                            <h4 class="main-box-workouts-date-date">15</h4>
-                        </div>
-                        <div class="main-box-workouts-date-box main-box-workouts-date-active">
-                            <p class="main-box-workouts-date-day main-box-workouts-date-day-active">Wed</p>
-                            <h4 class="main-box-workouts-date-date main-box-workouts-date-date-active">16</h4>
-                        </div>
-                        <div class="main-box-workouts-date-box">
-                            <p class="main-box-workouts-date-day">Wed</p>
-                            <h4 class="main-box-workouts-date-date">17</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="main-button-full-report">
-                View Full Report
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg>
+        <div class="main-reaching-circle">
+            <p class="main-reaching-score">55,6</p>
+            <p class="main-reaching-text">Reaching Score</p>
+            <button class="main-reaching-button" onclick="GetInfoReaching()">
+                <p class="main-reaching-button-text">?</p>
             </button>
         </div>
+
+        <button class="main-button-full-report">
+            View Full Report
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+        </button>
+
+        <div class="main-date-container">
+            <div class="main-date-dates">
+                <div class="main-date-day main-date-day-active">
+                    <div class="main-date-day-week">Mon</div>
+                    <div class="main-date-day-day">14</div>
+                </div>
+
+                <div class="main-date-day">
+                    <div class="main-date-day-week">Tue</div>
+                    <div class="main-date-day-day">15</div>
+                </div>
+
+                <div class="main-date-day main-date-day-sport-day">
+                    <div class="main-date-day-week">Wed</div>
+                    <div class="main-date-day-day">16</div>
+                </div>
+
+                <div class="main-date-day">
+                    <div class="main-date-day-week">Thu</div>
+                    <div class="main-date-day-day">17</div>
+                </div>
+
+                <div class="main-date-day">
+                    <div class="main-date-day-week">Fri</div>
+                    <div class="main-date-day-day">18</div>
+                </div>
+            </div>
+            <div class="main-date-text-container">
+                <div class="main-date-text">
+                    <div class="main-date-text-sport">Sport: </div>
+                    <div class="main-date-text-sport-text">Training, Fitness & HIIT</div>
+    
+                    <div class="main-date-text-level">Level: </div>
+                    <div class="main-date-text-level-text">Semi-professional</div>
+                </div>
+
+            </div>
+        </div>
     </div>
-
-
+    
     <div class="navbar">
         <div class="navbarfade"></div>
         <div class="navbarbox">
@@ -135,15 +125,44 @@
                     </svg>
                     <div class="icontext">Overview</div>
                 </div>
-                <div class="navitem" id="navbar-profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person icon" viewBox="0 0 16 16">
-                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                    </svg>
-                    <div class="icontext">Profile</div>
-                </div>
             </div>
         </div>
     </div>
 
+    <script src="../js/lib/progressbar.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let ReachingCircle;
+        let ReachingVisible = false
+
+        function CreateCricle(className, color, trailColor){
+            return new ProgressBar.Circle(`.${className}`, {
+                color: color,
+                trailColor: trailColor,
+                strokeWidth: 14,
+                trailWidth: 14,
+                duration: 2000,
+                easing: "easeInOut",
+                fill: "transparent",
+            });
+        }
+
+        function SetupCircles() {
+            ReachingCircle = CreateCricle('main-reaching-circle', `rgb(59, 178, 115)`, 'rgba(59, 178, 115, 0.35)');
+            ReachingCircle.animate(0.556);            
+        }
+
+        SetupCircles()
+
+        function GetInfoReaching() {
+            if (!ReachingVisible) {
+                $('.popup').slideDown(400)
+                ReachingVisible = true
+            } else {
+                $('.popup').slideUp(400)
+                ReachingVisible = false
+            }
+        }
+    </script>
 </body>
 </html>
