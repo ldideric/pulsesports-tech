@@ -15,9 +15,9 @@ You can add the site as a Progressive Web App in your browser, and access the si
 
 ## 🔗 Credits
 
-Made by 
-[![portfolio](https://img.shields.io/badge/Lietze_Diderich-00C04B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ldideric/)
-[![portfolio](https://img.shields.io/badge/Finn_Groenewoud-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/F1nnG/)
-Quinten van der Laan\
-Kian Acquoij\
+Made by: <br>
+[![portfolio](https://img.shields.io/badge/Lietze_Diderich-00C04B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ldideric/)<br>
+[![portfolio](https://img.shields.io/badge/Finn_Groenewoud-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/F1nnG/)<br>
+Quinten van der Laan<br>
+Kian Acquoij<br>
 Collin Pickkers
