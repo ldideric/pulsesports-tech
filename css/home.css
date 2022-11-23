@@ -69,7 +69,7 @@ body {
 
     height: fit-content;
 
-    background: #F9F3F3;
+    background: #ededed;
 
     border-radius: 20px;
 
@@ -93,9 +93,11 @@ body {
 
 .main-box-summary-left-header-text {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
 
     border-right: 1px solid #D1D1D6;
+
+    color: #848484;
     
     padding-left: 1vh;
 }
@@ -103,8 +105,6 @@ body {
 .main-box-summary-left-over-reaching-score {
     font-weight: 700;
     font-size: 24px;
-
-    color: #848484;
 
     padding-bottom: 1vh;
     padding-left: 1vh;
@@ -118,6 +118,8 @@ body {
     font-weight: 700;
     font-size: 16px;
 
+    color: #848484;
+
     padding-left: 1vh;
 }
 
@@ -125,7 +127,6 @@ body {
     font-weight: 700;
     font-size: 24px;
 
-    color: #848484;
     padding-left: 1vh;
 }
 
@@ -159,6 +160,10 @@ body {
     border: none;
 
     padding: 5px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.22);
 }
 
 .main-box-summary-right-text {
@@ -204,7 +209,7 @@ body {
 
     height: fit-content;
 
-    background: #F9F3F3;
+    background: #ededed;
 
     border-radius: 20px;
 
