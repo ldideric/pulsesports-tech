@@ -1,5 +1,6 @@
 const url = "./js/surveys.json";
 let surveyData;
+let userData;
 
 async function getData() {
     const response = await fetch(url);
@@ -8,8 +9,19 @@ async function getData() {
 }
 
 (async function loadSurveys() {
+    let isDone;
     let jsondata = await getData();
+    if (sessionStorage.getItem("0IsDone") === null) {
+        sessionStorage.setItem("0IsDone", false);
+        sessionStorage.setItem("1IsDone", false);
+    }
     for (let i = 0; i < jsondata.length; i++) {
+        if (sessionStorage.getItem(`${i}IsDone`) == "true") {
+            isDone = "Finished";
+        } else {
+            isDone = "Get Started"
+        }
+
         const div = document.createElement('div');
 
         div.className = 'survey';
@@ -18,7 +30,7 @@ async function getData() {
             <div class="surveytitle">${jsondata[i].title}</div>
             <div class="surveydesc">${jsondata[i].description}</div>
             <div class="buttonbox">
-                <div class="startsurvey" id="startSurvey${i}"><p class="buttontext">Get Started</p></div>
+                <div class="startsurvey ${isDone}" id="startSurvey${i}"><p class="buttontext">${isDone}</p></div>
             </div>
             <div id="surveyinfo">
                 <div class="surveyinfo">Duration: ${jsondata[i].duration}</div>
@@ -28,7 +40,11 @@ async function getData() {
         `;
 
         document.getElementById('surveyitems').appendChild(div);
-        document.getElementById(`startSurvey${i}`).addEventListener('click', () => { startSurvey(i); });
+        if (sessionStorage.getItem(`${i}IsDone`) == "false") {
+            document.getElementById(`startSurvey${i}`).addEventListener('click', () => { startSurvey(i); });
+        }
+
+        
 
     }
 })();

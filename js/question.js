@@ -43,6 +43,7 @@ async function loadQuestion() {
             document.getElementById('radio-toolbar').appendChild(input);
             document.getElementById('finishButton').addEventListener('click', () => {
                 window.location.href = './survey.html';
+                sessionStorage.setItem(`${currentSurvey}IsDone`, true);
             });
         } else {
             const input = document.createElement('input');
