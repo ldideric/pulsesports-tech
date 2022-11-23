@@ -64,6 +64,10 @@ body {
     align-items: center;
 }
 
+.Finished {
+    background-color: #848484;
+}
+
 .buttontext {
     color: #FFFFFF;
     font-weight: 600;

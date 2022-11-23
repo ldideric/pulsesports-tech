@@ -3,16 +3,14 @@
     "name": "PULSE Sport",
     "icons": [
       {
-        "src": "images/dummy_192.png",
+        "src": "manifest/pulse_192.png",
         "type": "image/png",
-        "sizes": "192x192",
-        "purpose": "any"
+        "sizes": "192x192"
       },
       {
-        "src": "images/dummy_512.png",
+        "src": "manifest/pulse_512.png",
         "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any"
+        "sizes": "512x512"
       }
     ],
     "start_url": "/index.html",
@@ -26,7 +24,7 @@
         "short_name": "Insights",
         "description": "View the daily insights about your body",
         "url": "/overview.html",
-        "icons": [{ "src": "images/dummy_192.png", "sizes": "192x192" }]
+        "icons": [{ "src": "manifest/pulse_192.png", "sizes": "192x192" }]
       }
     ]
   }

@@ -8,3 +8,6 @@ document.getElementById('navbar-overview').addEventListener('click', () => {
 document.getElementById('navbar-home').addEventListener('click', () => {
     window.location.href = './home.html';
 });
+document.getElementById('navbar-profile').addEventListener('click', () => {
+    window.location.href = './profile.html';
+});
