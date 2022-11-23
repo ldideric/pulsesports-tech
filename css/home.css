@@ -74,8 +74,7 @@ body {
 .logo-div {
     position: relative;
     text-align: center;
-    padding: 5vw;
-    transition: 1.3s padding ease-out;
+    padding: 10vw;
 }
 
 .logo-img {
@@ -91,13 +90,10 @@ body {
 }
 
 .main-date p {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     font-weight: 400;
-
+    margin-right: 50vw;
     text-align: center;
-
-    /* transition: 1.5s all ease; */
-    /* transition-property: margin-right, font-size; */
 }
 
 /* Line under header photo */
@@ -112,6 +108,9 @@ body {
 /* --------- End Header --------- */
 
 /* --------- Start Line 1 --------- */
+.main-boxes {
+    margin-top: 70vh;
+}
 
 .main-reaching-circle {
     position: relative;

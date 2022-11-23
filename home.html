@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PULSE Home</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS and JavaScript Files -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/home.css">
     <script src="js/home.js" defer></script>
-    <script src="js/navbar.js" defer></script>
-    <script type="module" src="js/data.js"></script>
-    <script type="module" src="js/validator.js"></script>
-    <!-- preload logo -->
-    <link rel="preload" as="image" href="./img/logo.png">
-    <!-- Account validator -->
-    <script type="module" src="js/data.js"></script>
-    <script type="module" src="js/validator.js"></script>
-    <!-- Responsive Web App -->
-    <link rel="manifest" href="/manifest.json">
-    <script src="js/loadServiceWorker.js"></script>
-
-    <!-- RWA Color Schemes DON'T DELETE-->
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="white">
-    <!-- Disable Pinch Zoom -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="../js/lib/progressbar.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -33,6 +13,7 @@
         <p class="popup-title">Summary</p>
         <p class="popup-text">You have attained high levels of over-reaching. Your coach suggests 2-3 days off to let your body & mind recover. Check out the full report for a detailed view.</p>
     </div>
+
 
     <div class="main-content-main">
         <!-- Start Header -->
@@ -45,129 +26,61 @@
         <hr class="main-line">
         <!-- End Header -->
 
-        <div class="main-reaching-circle">
-            <p class="main-reaching-score">55,6</p>
-            <p class="main-reaching-text">Reaching Score</p>
-            <button class="main-reaching-button" onclick="GetInfoReaching()">
-                <p class="main-reaching-button-text">?</p>
+        <div class="main-boxes">
+            <div class="main-reaching-circle">
+                <p class="main-reaching-score">55,6</p>
+                <p class="main-reaching-text">Reaching Score</p>
+                <button class="main-reaching-button" onclick="GetInfoReaching()">
+                    <p class="main-reaching-button-text">?</p>
+                </button>
+            </div>
+
+            <button class="main-button-full-report">
+                View Full Report
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
             </button>
-        </div>
 
-        <button class="main-button-full-report">
-            View Full Report
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-            </svg>
-        </button>
+            <div class="main-date-container">
+                <div class="main-date-dates">
+                    <div class="main-date-day main-date-day-active">
+                        <div class="main-date-day-week">Mon</div>
+                        <div class="main-date-day-day">14</div>
+                    </div>
 
-        <div class="main-date-container">
-            <div class="main-date-dates">
-                <div class="main-date-day main-date-day-active">
-                    <div class="main-date-day-week">Mon</div>
-                    <div class="main-date-day-day">14</div>
-                </div>
+                    <div class="main-date-day">
+                        <div class="main-date-day-week">Tue</div>
+                        <div class="main-date-day-day">15</div>
+                    </div>
 
-                <div class="main-date-day">
-                    <div class="main-date-day-week">Tue</div>
-                    <div class="main-date-day-day">15</div>
-                </div>
+                    <div class="main-date-day main-date-day-sport-day">
+                        <div class="main-date-day-week">Wed</div>
+                        <div class="main-date-day-day">16</div>
+                    </div>
 
-                <div class="main-date-day main-date-day-sport-day">
-                    <div class="main-date-day-week">Wed</div>
-                    <div class="main-date-day-day">16</div>
-                </div>
+                    <div class="main-date-day">
+                        <div class="main-date-day-week">Thu</div>
+                        <div class="main-date-day-day">17</div>
+                    </div>
 
-                <div class="main-date-day">
-                    <div class="main-date-day-week">Thu</div>
-                    <div class="main-date-day-day">17</div>
+                    <div class="main-date-day">
+                        <div class="main-date-day-week">Fri</div>
+                        <div class="main-date-day-day">18</div>
+                    </div>
                 </div>
+                <div class="main-date-text-container">
+                    <div class="main-date-text">
+                        <div class="main-date-text-sport">Sport: </div>
+                        <div class="main-date-text-sport-text">Training, Fitness & HIIT</div>
+        
+                        <div class="main-date-text-level">Level: </div>
+                        <div class="main-date-text-level-text">Semi-professional</div>
+                    </div>
 
-                <div class="main-date-day">
-                    <div class="main-date-day-week">Fri</div>
-                    <div class="main-date-day-day">18</div>
-                </div>
-            </div>
-            <div class="main-date-text-container">
-                <div class="main-date-text">
-                    <div class="main-date-text-sport">Sport: </div>
-                    <div class="main-date-text-sport-text">Training, Fitness & HIIT</div>
-    
-                    <div class="main-date-text-level">Level: </div>
-                    <div class="main-date-text-level-text">Semi-professional</div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    
-    <div class="navbar">
-        <div class="navbarfade"></div>
-        <div class="navbarbox">
-            <div class="seperator"></div>
-            <div class="navitems">
-                <div class="navitem" id="navbar-survey">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-question-circle icon" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                      </svg>
-                    <div class="icontext">Survey</div>
-                </div>
-                <div class="navitem" id="navbar-home">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-house icon" viewBox="0 0 16 16">
-                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                      </svg>
-                    <div class="icontext">Home</div>
-                </div>
-                <div class="navitem" id="navbar-overview">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-heart icon" viewBox="0 0 16 16">
-                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                    </svg>
-                    <div class="icontext">Overview</div>
-                </div>
-                <div class="navitem" id="navbar-profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person-fill icon" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                    </svg>
-                    <div class="icontext">Profile</div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="../js/lib/progressbar.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        let ReachingCircle;
-        let ReachingVisible = false
-
-        function CreateCricle(className, color, trailColor){
-            return new ProgressBar.Circle(`.${className}`, {
-                color: color,
-                trailColor: trailColor,
-                strokeWidth: 14,
-                trailWidth: 14,
-                duration: 2000,
-                easing: "easeInOut",
-                fill: "transparent",
-            });
-        }
-
-        function SetupCircles() {
-            ReachingCircle = CreateCricle('main-reaching-circle', `rgb(59, 178, 115)`, 'rgba(59, 178, 115, 0.35)');
-            ReachingCircle.animate(0.556);            
-        }
-
-        SetupCircles()
-
-        function GetInfoReaching() {
-            if (!ReachingVisible) {
-                $('.popup').slideDown(400)
-                ReachingVisible = true
-            } else {
-                $('.popup').slideUp(400)
-                ReachingVisible = false
-            }
-        }
-    </script>
 </body>
 </html>
