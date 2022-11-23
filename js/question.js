@@ -26,7 +26,7 @@ async function loadQuestion() {
             const div = document.createElement('div');
 
             div.innerHTML = `
-                <input type="radio" id="${questionData}" name="${questionData}" value="${questionData}">
+                <input type="radio" id="${questionData}" name="radioQuestion" value="${questionData}">
                 <label for="${questionData}">${questionData}</label>
             `;
 
