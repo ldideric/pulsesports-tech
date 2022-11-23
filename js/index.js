@@ -68,7 +68,7 @@ async function loadToPage(loadedhtml, page) {
     }, timeout * 2 + timeout / 7)
     setTimeout(() => {
         appendhere.style.opacity = 1;
-    }, timeout * 3 + timeout / 7)
+    }, timeout * 4)
 }
 
 // calls to load page
