@@ -27,7 +27,7 @@ async function loadToPage(loadedhtml, page) {
 
     let timeout = 200;
     if (localStorage.getItem('logotransition') == 'true') {
-        timeout = 0;
+        timeout = 150;
     }
 
     setTimeout(() => {
