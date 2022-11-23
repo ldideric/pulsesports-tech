@@ -3,207 +3,138 @@ body {
 }
 
 hr {
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 20vh;
-    width: 70%;
+    margin: auto !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+    width: 50% !important;
 }
 
-.containers {
-    margin-bottom: 20vh;
+.div-1 {
+    margin-top: 3vh;
 }
 
-.user {
-    margin-top: 10vh;
+.userprofile {
     display: flex;
+    justify-content: space-around;
     align-items: flex-end;
-    height: 30vh;
 }
 
-.user .name {
-    padding-left: 20vw;
-    width: 40vw;
-    font-size: 3.79vh;
-    font-weight: bolder;
-    line-height: 90%;
+.userprofile .name {
+    font-size: 8vw;
+    font-weight: 800;
+    line-height: 7vw !important;
 }
 
-.user .profilepic {
+.userprofile .profilepic {
     display: flex;
     justify-content: center;
-    width: 50vw;
 }
 
-.user .profilepic img {
+.userprofile .profilepic img {
     object-fit: cover;
     object-position: center;
-    width: 30vw;
+    width: 16.5vw;
     height: auto;
     border-radius: 100px;
 }
 
-.track-work {
+.short-statistics {
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
-    letter-spacing: 0px;
 }
 
-.track-work #title {
-    font-size: 5vw;
-    font-weight: bold;
+.short-statistics div {
+    width: 50%;
 }
 
-.track-work #content {
-    font-size: 5vw;
+.short-statistics div * {
+    margin-bottom: 0px !important;
+}
+
+.short-statistics .title {
     font-weight: 700;
-    color: gray
+    font-size: 3.6vw;
 }
 
-.track-work .track {
-    width: 50vw;
+.short-statistics .info {
+    font-weight: 700;
+    font-size: 3.3vw;
+    color: #848484;
 }
 
-.track-work .work {
-    width: 50vw;
-}
-
-.work-capacity {
+/* Statistics 1 */
+.div-2 .stat-container {
     margin-top: 10vh;
     margin-left: 10vw;
     margin-right: 2vw;
     margin-bottom: 10vw;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     font-size: 85px;
 }
 
-.work-capacity .title {
+.div-2 .stat-container .title {
     padding-left: 0.5vw;
-    width: 50vw;
     margin-top: 2vh;
-    font-size: 5vh;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.div-2 #circlegen {
+    height: 40vw;
+    width: 40vw;
+    margin-bottom: 3vh;
+}
+
+.div-2 .buttons {
+    height: 1vh !important;
+    width: 1.1vh !important;
+    border-radius: 100% !important;
+    z-index: 0 !important;
+}
+
+/* Statistics 2 */
+.div-3 .stat-container {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 2vw;
+    margin-bottom: 10vw;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    font-size: 85px;
+}
+
+.div-3 .stat-container .title {
+    padding-left: 0.5vw;
+    margin-top: 2vh;
+    font-size: 7vw;
     font-weight: bold;
 }
 
-.WorkCapacityCircle {
+.div-3 #circlegen {
     height: 40vw;
-    width: auto;
-
-    font-size: 50px;
-    font-weight: bold;
+    width: 40vw;
+    margin-bottom: 3vh;
 }
 
-.StepsCircle {
-    height: 40vw;
-    width: auto;
-    font-size: 50px;
-    font-weight: bold;
-}
 
-.KCALCircle {
-    height: 40vw;
-    width: auto;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.pulse-index-circle {
-    margin-left: auto;
-    margin-right: auto;
-
-    height: 70vh;
-    width: 70vw;
-}
-
-.pulse-index-circle > p {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    
-    color: black;
-
-    font-size: 8vw;
-    font-weight: bold;
-
-    transform: translate(-50%, -50%);
-}
-
-.HeartRate-circle {
-    margin-left: auto;
-    margin-right: auto;
-
-    height: 70vh;
-    width: 70vw;
-}
-
-.HeartRate-circle > p {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-
-    top: 50%;
-    left: 50%;
-    
-    color: black;
-
-    font-size: 8vw;
-    font-weight: bold;
-
-    transform: translate(-50%, -50%);
-}
-
-.SleepTime-circle {
-    margin-left: auto;
-    margin-right: auto;
-
-    height: 70vh;
-    width: 70vw;
-}
-
-.SleepTime-circle > p {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    
-    color: black;
-
-    font-size: 5vw;
-    font-weight: bold;
-
-    transform: translate(-50%, -50%);
-}
-
-.test {
-    height: 450px;
-}
-
-.buttons{
+.div-3 .buttons {
     height: 1vh !important;
     width: 1.1vh !important;
     border-radius: 100% !important;
     z-index: 0 !important;
 }
 
-.buttons2{
-    position: relative;
-    top: 3vh !important;
-    height: 1vh !important;
-    width: 1.1vh !important;
-    border-radius: 100% !important;
-    z-index: 0 !important;
-}
+
 
 .navbar {
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
+    position: fixed !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
     z-index: 1;
 }
 
