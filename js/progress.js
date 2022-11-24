@@ -23,11 +23,11 @@ export async function main() {
     }
 
         function CreateHudWork2(className, color, trailColor){
-        return new ProgressBar.Circle(`.${className}`, {
+        return new ProgressBar.SemiCircle(`.${className}`, {
             color: color,
             trailColor: trailColor,
-            strokeWidth: 20,
-            trailWidth: 20,
+            strokeWidth: 6,
+            trailWidth: 6,
             duration: 2000,
             easing: "easeInOut",
             fill: "transparent",
@@ -48,7 +48,7 @@ export async function main() {
         KCALCircle.animate(0.6);
 
         PulseIndexCircle = CreateHudWork2('pulse-index-circle', `rgb(54, 139, 51)`, 'rgb(135, 189, 133)');
-        PulseIndexCircle.animate(0.2);
+        PulseIndexCircle.animate(0.55);
 
         let HeartRate = userData.HeartRate / userData.HRMax;
         HeartRateCircle = CreateHudWork2('HeartRate-circle', `rgb(180, 54, 31)`, 'rgb(240, 129, 110)');

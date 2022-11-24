@@ -3,18 +3,6 @@
     "name": "PULSE Sport",
     "icons": [
       {
-        "src": "manifest/pulse_192.png",
-        "type": "image/png",
-        "sizes": "192x192",
-        "purpose": "any"
-      },
-      {
-        "src": "manifest/pulse_512.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any"
-      },
-      {
         "src": "manifest/maskable_pulse_192.png",
         "type": "image/png",
         "sizes": "192x192",
@@ -25,13 +13,25 @@
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "maskable"
+      },
+      {
+        "src": "manifest/pulse_192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
+      },
+      {
+        "src": "manifest/pulse_512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
       }
     ],
     "start_url": "/index.html",
-    "background_color": "#0DA2FF",
+    "background_color": "#FFFFFF",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#0DA2FF",
+    "theme_color": "#FFFFFF",
     "shortcuts": [
       {
         "name": "Overview of your data",
