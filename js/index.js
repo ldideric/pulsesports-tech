@@ -21,12 +21,12 @@ async function loadToPage(loadedhtml, page) {
         navbar.style.opacity = 0;
         setTimeout(() => {
             navbar.style.display = 'none';
-        }, 300)
+        }, 150)
     } else {
         navbar.style.display = 'inline';
         setTimeout(() => {
             navbar.style.opacity = 1;
-        }, 100)
+        }, 300)
     }
     const appendhere = document.querySelector('.appendhere');
     appendhere.style.opacity = 1;
@@ -91,12 +91,11 @@ async function loadToPage(loadedhtml, page) {
 
 // calls to load page
 async function changePage(page) {
-    const loadedtext = await get(`../pageLoader/${page}.html`);
-    const loadedhtml = await parseToHTML(loadedtext);
-    loadToPage(loadedhtml, page);
-
     const navbar = await import('./navbar.js')
     navbar.update(page);
+    const loadedtext = await get(`../pageLoader/${page}.html`);
+    const loadedhtml = await parseToHTML(loadedtext);
+    await loadToPage(loadedhtml, page);
 };
 
 // Hash handler
