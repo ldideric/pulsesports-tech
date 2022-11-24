@@ -99,6 +99,9 @@ async function changePage(page) {
     const loadedtext = await get(`../pageLoader/${page}.html`);
     const loadedhtml = await parseToHTML(loadedtext);
     loadToPage(loadedhtml, page);
+
+    const navbar = await import('./navbar.js')
+    navbar.update(page);
 };
 
 // Hash handler
