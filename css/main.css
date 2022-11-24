@@ -25,7 +25,7 @@ html, body {
 }
 
 /* Light */
-/* :root {
+:root {
     --background: white;
     --backgroundseccondary: #ededed;
     --regulartext: black;
@@ -35,10 +35,10 @@ html, body {
     --bluecolor: #123456;
     --logo: url('../img/logo.png');
     --buttoncolor: #123456;
-} */
+}
 
 /* Dark */
-:root {
+/* :root {
     --background: #202125;
     --backgroundseccondary: #303135;
     --regulartext: white;
@@ -48,12 +48,4 @@ html, body {
     --bluecolor: #044585;
     --logo: url('../img/logowhite.png');
     --buttoncolor: rgb(170, 170, 170);
-}
-
-/* :root {
-    --background: green;
-    --backgroundseccondary: yellow;
-    --regulartext: purple;
-    --seccondarytext: limegreen;
-    --tertiarytext: blue;
 } */
