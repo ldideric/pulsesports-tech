@@ -31,11 +31,35 @@ hr:first-of-type {
     justify-content: space-between !important;
 }
 
-.procent-div {
+.circlestat-div {
     position: absolute;
+    top: 0;
+    left: 0;
     font-weight: bold;
     flex-direction: column;
-    color: rgb(69, 69, 69);
+    line-height: 0.5vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    font-size: 6vw;
+    text-align: start;
+}
+
+.circlestat {
+    color: gray;
+    font-size: 60%;
+    font-weight: 500;
+}
+
+.halfcirclestat-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    flex-direction: column;
     line-height: 1vh;
     height: 100%;
     width: 100%;
@@ -43,14 +67,12 @@ hr:first-of-type {
     justify-content: center;
     align-items: center;
     margin-top: 1vh;
-    font-size: x-large;
-    /* background-color: blue; */
-    top: 0;
-    left: 0;
+    font-size: 8vw;
+    text-align: start;
 }
 
-.procent {
-    margin-left: 2vw;
+.halfcirclestat {
+    color: gray;
     font-size: 60%;
     font-weight: 500;
 }
@@ -152,20 +174,6 @@ hr:first-of-type {
     font-weight: bold;
     display: flex;
     justify-content: center;
-}
-
-.div-3 .stat-container .title .stat-data-text {
-    position: fixed;
-    font-size: 8vw;
-    margin-top: 25vw;
-}
-
-.div-3 .stat-container .title .subtext-stat-data {
-    color: grey;
-    position: fixed;
-    font-size: 4vw;
-    margin-top: 34vw;
-    /* margin-left: 5vw; */
 }
 
 .div-3 #circlegen {

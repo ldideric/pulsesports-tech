@@ -4,14 +4,13 @@
 
 /* Header Photo */
 
-body {
-    padding: 1vh;
-}
+
 
 .logo-div {
     position: relative;
     text-align: center;
     align-items: center;
+    margin-top: 2vh;
 }
 
 .logo-img {
