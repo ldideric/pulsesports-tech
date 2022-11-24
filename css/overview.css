@@ -12,6 +12,30 @@ hr {
     justify-content: space-between !important;
 }
 
+.procent-div {
+    position: absolute;
+    font-weight: bold;
+    flex-direction: column;
+    color: rgb(69, 69, 69);
+    line-height: 1vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    font-size: x-large;
+    /* background-color: blue; */
+    top: 0;
+    left: 0;
+}
+
+.procent {
+    margin-left: 2vw;
+    font-size: 60%;
+    font-weight: 500;
+}
+
 .div-1 {
     margin-top: 2vh;
 }
@@ -71,6 +95,7 @@ hr {
 }
 
 .div-2 #circlegen {
+    position: relative;
     height: 40vw;
     width: 40vw;
     margin-bottom: 3vh;
