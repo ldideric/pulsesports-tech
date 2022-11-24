@@ -38,7 +38,7 @@ html, body {
 }
 
 /* Dark */
-/* :root {
+.dark {
     --background: #202125;
     --backgroundseccondary: #303135;
     --regulartext: white;
@@ -48,4 +48,4 @@ html, body {
     --bluecolor: #044585;
     --logo: url('../img/logowhite.png');
     --buttoncolor: rgb(170, 170, 170);
-} */
+}
