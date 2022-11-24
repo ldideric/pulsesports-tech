@@ -21,24 +21,19 @@ async function loadToPage(loadedhtml, page) {
         navbar.style.opacity = 0;
         setTimeout(() => {
             navbar.style.display = 'none';
-        }, 300)
+        }, 150)
     } else {
         navbar.style.display = 'inline';
         setTimeout(() => {
             navbar.style.opacity = 1;
-        }, 100)
+        }, 300)
     }
     const appendhere = document.querySelector('.appendhere');
     appendhere.style.opacity = 1;
 
     let timeout = 200;
-    if (localStorage.getItem('logotransition') == 'true') {
-        timeout = 150;
-    }
 
-    setTimeout(() => {
-        appendhere.style.opacity = 0;
-    }, timeout)
+    appendhere.style.opacity = 0;
 
     setTimeout(async () => {
         appendhere.innerHTML = '';
@@ -91,14 +86,16 @@ async function loadToPage(loadedhtml, page) {
                 }, timeout)
             }
         }
-    }, timeout * 2 + timeout / 7)
+    }, timeout)
 }
 
 // calls to load page
 async function changePage(page) {
+    const navbar = await import('./navbar.js')
+    navbar.update(page);
     const loadedtext = await get(`../pageLoader/${page}.html`);
     const loadedhtml = await parseToHTML(loadedtext);
-    loadToPage(loadedhtml, page);
+    await loadToPage(loadedhtml, page);
 };
 
 // Hash handler

@@ -14,8 +14,8 @@ export async function main() {
         return new ProgressBar.Circle(`.${className}`, {
             color: color,
             trailColor: trailColor,
-            strokeWidth: 25,
-            trailWidth: 10,
+            strokeWidth: 20,
+            trailWidth: 20,
             duration: 2000,
             easing: "easeInOut",
             fill: "transparent",
