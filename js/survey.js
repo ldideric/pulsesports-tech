@@ -52,6 +52,6 @@ export function main() {
 
     function startSurvey(id) {
         sessionStorage.setItem("currentSurvey", id);
-        window.location.href = './question.html';
+        window.location.href = './#question';
     }
 }
