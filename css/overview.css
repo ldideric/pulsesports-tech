@@ -9,6 +9,16 @@ hr {
     width: 50% !important;
 }
 
+.carousel-control-next {
+    position: absolute !important;
+    right: -5vw !important;
+}
+
+.carousel-control-prev {
+    position: absolute !important;
+    left: -5vw !important;
+}
+
 .div-1 {
     margin-top: 2vh;
 }
@@ -18,12 +28,9 @@ hr {
     font-weight: 800;
     justify-content: center;
     align-items: flex-end;
-    font-size: xx-large;
+    font-size: xxx-large;
+    margin-bottom: 0;
     line-height: 7vw;
-}
-
-#last {
-    margin-left: 4vw;
 }
 
 .userprofile .profilepic {
@@ -76,8 +83,8 @@ hr {
 }
 
 .div-2 .stat-container .title {
+    text-align: center;
     padding-left: 0.5vw;
-    margin-top: 2vh;
     font-size: 7vw;
     font-weight: bold;
 }
@@ -115,6 +122,7 @@ hr {
 }
 
 .div-3 .stat-container .title {
+    text-align: center;
     padding-left: 0.5vw;
     font-size: 7vw;
     font-weight: bold;
