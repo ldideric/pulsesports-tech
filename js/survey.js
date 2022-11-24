@@ -1,7 +1,6 @@
 export function main() {
     const url = "./js/surveys.json";
     let surveyData;
-    let userData;
 
     async function getData() {
         const response = await fetch(url);
@@ -52,6 +51,6 @@ export function main() {
 
     function startSurvey(id) {
         sessionStorage.setItem("currentSurvey", id);
-        window.location.href = './question.html';
+        window.location.href = '#question';
     }
 }
