@@ -22,6 +22,28 @@ async function loadToPage(loadedhtml, page) {
         setTimeout(() => {
             navbar.style.display = 'none';
         }, 150)
+    } else if (page == 'profile') {
+
+        navbar.style.display = 'inline';
+        setTimeout(() => {
+            navbar.style.opacity = 1;
+
+            document.getElementById('toggle-theme').addEventListener('click', () => {
+                darkLight2()
+            });
+    
+            function darkLight2() {
+                let cat = localStorage.getItem('darkMode');
+
+                if (!cat) {
+                    document.body.classList.toggle("dark");
+                    localStorage.setItem('darkMode', true)
+                } else {
+                    document.body.classList.toggle("dark");
+                    localStorage.setItem('darkMode', false)
+                }
+            }
+        }, 300)
     } else {
         navbar.style.display = 'inline';
         setTimeout(() => {
