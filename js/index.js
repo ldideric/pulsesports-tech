@@ -25,9 +25,9 @@ async function loadToPage(loadedhtml, page) {
     const appendhere = document.querySelector('.appendhere');
     appendhere.style.opacity = 1;
 
-    let timeout = 150;
+    let timeout = 200;
     if (localStorage.getItem('logotransition') == 'true') {
-        timeout = 0;
+        timeout = 150;
     }
 
     setTimeout(() => {
@@ -68,7 +68,7 @@ async function loadToPage(loadedhtml, page) {
     }, timeout * 2 + timeout / 7)
     setTimeout(() => {
         appendhere.style.opacity = 1;
-    }, timeout * 3 + timeout / 7)
+    }, timeout * 4)
 }
 
 // calls to load page

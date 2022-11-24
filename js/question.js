@@ -1,7 +1,7 @@
 const url = "./js/surveys.json";
 
 document.getElementById('backButton').addEventListener('click', () => {
-    window.location.href = '#survey';
+    window.location.href = './#survey';
 });
 
 async function getData() {
@@ -42,7 +42,7 @@ async function loadQuestion() {
             input.id = "finishButton"
             document.getElementById('radio-toolbar').appendChild(input);
             document.getElementById('finishButton').addEventListener('click', () => {
-                window.location.href = '#survey';
+                window.location.href = './#survey';
                 sessionStorage.setItem(`${currentSurvey}IsDone`, true);
             });
         } else {
