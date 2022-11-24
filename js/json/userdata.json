@@ -1,6 +1,9 @@
 {
     "admin" : {
         "password":"admin",
+        "name":"Siwan Aberkane",
+        "sport":"Strenght Training, Fitness & HIIT",
+        "level":"Semi-professional",
         "birthday":"01-01-2000",
         "gender":"undefined",
         "timeline" : {
