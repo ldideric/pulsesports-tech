@@ -39,7 +39,7 @@ export function main() {
                 input.className = "submit";
                 input.type = "button";
                 input.value = "Finish";
-                input.id = "finishButton"
+                input.id = "finishButton";
                 document.getElementById('radio-toolbar').appendChild(input);
                 document.getElementById('finishButton').addEventListener('click', () => {
                     window.location.href = '#survey';
@@ -51,7 +51,11 @@ export function main() {
                 input.className = "submit";
                 input.type = "submit";
                 input.value = "Next";
+                input.id = "nextButton";
                 document.getElementById('radio-toolbar').appendChild(input);
+                document.getElementById('nextButton').addEventListener('click', () => {
+                    window.location.reload();
+                });
             }
         }
     }
