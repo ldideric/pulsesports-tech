@@ -47,6 +47,8 @@ export async function main() {
 
     SetupCircles()
 
+    document.getElementsByClassName('popup-close-button')[0].addEventListener('click', GetInfoReaching);
+    document.getElementsByClassName('main-reaching-button')[0].addEventListener('click', GetInfoReaching);
     function GetInfoReaching() {
         if (!ReachingVisible) {
             $('.popup').slideDown(400)

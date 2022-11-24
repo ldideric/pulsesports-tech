@@ -1,7 +1,6 @@
 export function main() {
     const url = "./js/surveys.json";
     let surveyData;
-    let userData;
 
     async function getData() {
         const response = await fetch(url);
