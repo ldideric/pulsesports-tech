@@ -21,4 +21,39 @@ html, body {
     height: 100%;
     overflow-y: hidden;
     user-select: none;
+    background-color: var(--background);
 }
+
+/* Light */
+/* :root {
+    --background: white;
+    --backgroundseccondary: #ededed;
+    --regulartext: black;
+    --seccondarytext: #848484;
+    --tertiarytext: white;
+    --circletextcolor: #123456;
+    --bluecolor: #123456;
+    --logo: url('../img/logo.png');
+    --buttoncolor: #123456;
+} */
+
+/* Dark */
+:root {
+    --background: #202125;
+    --backgroundseccondary: #303135;
+    --regulartext: white;
+    --seccondarytext: #848484;
+    --tertiarytext: white;
+    --circletextcolor: white;
+    --bluecolor: #044585;
+    --logo: url('../img/logowhite.png');
+    --buttoncolor: rgb(170, 170, 170);
+}
+
+/* :root {
+    --background: green;
+    --backgroundseccondary: yellow;
+    --regulartext: purple;
+    --seccondarytext: limegreen;
+    --tertiarytext: blue;
+} */
