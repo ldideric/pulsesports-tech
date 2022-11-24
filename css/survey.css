@@ -17,63 +17,184 @@
 }
 
 .survey {
-    background-color: #F9F3F3;
-    width: 84vw;
-    height: 32vh;
-    margin-left: 8vw;
+    background-color: #ededed;
+    width: 90vw;
+    padding-bottom: 2vh;
+    margin-left: 5vw;
     margin-top: 2vh;
     border-radius: 2.13vh;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.survey-top {
+    display: flex;
+    justify-content: space-between;
 }
 
 .surveytitle {
     font-weight: 700;
     font-size: 2.84vh;
-    margin-left: 2vw;
+    margin-left: 6vw;
     padding-top: 1.5vh;
 }
 
+.main-date-dates {
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+
+    width: 90%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+}
+
+.main-date-day {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FFFFFF;
+
+    width: 12vw;
+    height: 7vh;
+
+    margin: 1.5vw;
+    padding: 1vh;
+
+    border-radius: 15px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.main-date-day-week {
+    text-align: center;
+    
+    font-size: 14px;
+
+    color: #9FA2AE;
+}
+
+.main-date-day-day {
+    text-align: center;
+    margin-top: auto;
+
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.main-date-day-active {
+    background-color: #123456;
+}
+
+.main-date-day-active .main-date-day-week {
+    color: #FFFFFF !important;
+}
+
+.main-date-day-active .main-date-day-day {
+    color: #FFFFFF !important;
+    opacity: 0.7 !important;
+}
+
+.main-date-day-sport-day {
+    border: 5px solid #123456;
+
+    height: calc(7vh - 10px);
+    width: calc(12vw - 10px);
+
+    color: black !important;
+}
+
+.main-date-text-container {
+    position: relative;
+
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: calc(25vh - 120px);
+    width: 90%;
+
+    background-color: white;
+
+    border-radius: 3vh;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-date-text {
+    padding: 1vh;
+    padding-left: 2vh;
+}
+
+.main-date-text-sport-text {
+    font-weight: 800;
+}
+
+.main-date-text-level-text {
+    font-weight: 800;
+}
+
 .surveydesc {
-    width: 50vw;
-    margin-left: 2vw;
+    margin-left: 6vw;
     padding-top: 1.5vh;
     font-weight: 500;
     font-size: 1.66vh;
 }
 
-.buttonbox {
+.main-line {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+#surveyinfo {
+    margin-top: 1vh;
+}
+
+.surveyinfo {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-left: 6vw;
+    font-weight: 400;
+    font-size: 1.54vh;
+}
+
+.dataIcon {
+    width: 2vh;
+    height: 2vh;
+    margin-right: 2.5vw;
 }
 
 .startsurvey {
-    background-color: #123456;
-    width: 35vw;
-    height: 5.69vh;
-    border-radius: 1.18vh;
-    margin-top: 4vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 30vw;
+    background-color: #123456;
+    color: white;
+    padding: 1vh;
+    border-radius: 1vh;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-left: 6vw;
+    font-weight: 600;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .Finished {
     background-color: #848484;
-}
-
-.buttontext {
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 2vh;
-}
-
-#surveyinfo {
-    margin-top: 4vh;
-}
-
-.surveyinfo {
-    margin-left: 2vw;
-    font-weight: 400;
-    font-size: 1.54vh;
 }
 
 .seperator {
