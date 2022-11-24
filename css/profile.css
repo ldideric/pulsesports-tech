@@ -130,3 +130,8 @@ body {
 }
 
 /* --------- End Navbar --------- */
+.seticon {
+    height: 4vh;
+    width: 4vh;
+    fill: white;
+}
