@@ -116,12 +116,3 @@ if (getHash() == '' || getHash() == 'disable') {
 } else {
     changePage(getHash());
 }
-
-(async function preLoad() {
-    await fetch('../pageLoader/home.html');
-    await fetch('../pageLoader/login.html');
-    await fetch('../pageLoader/overview.html');
-    await fetch('../pageLoader/profile.html');
-    await fetch('../pageLoader/question.html');
-    await fetch('../pageLoader/survey.html');
-}());
