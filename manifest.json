@@ -5,12 +5,26 @@
       {
         "src": "manifest/pulse_192.png",
         "type": "image/png",
-        "sizes": "192x192"
+        "sizes": "192x192",
+        "purpose": "any"
       },
       {
         "src": "manifest/pulse_512.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "512x512",
+        "purpose": "any"
+      },
+      {
+        "src": "manifest/maskable_pulse_192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "manifest/maskable_pulse_512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
       }
     ],
     "start_url": "/index.html",
@@ -20,11 +34,17 @@
     "theme_color": "#0DA2FF",
     "shortcuts": [
       {
-        "name": "Insights in your data",
-        "short_name": "Insights",
+        "name": "Overview of your data",
+        "short_name": "Overview",
         "description": "View the daily insights about your body",
-        "url": "/overview.html",
-        "icons": [{ "src": "manifest/pulse_192.png", "sizes": "192x192" }]
+        "url": "/#overview",
+        "icons": [{ "src": "manifest/maskable_pulse_192.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "View your profile",
+        "short_name": "Profile",
+        "url": "/#profile",
+        "icons": [{ "src": "manifest/maskable_pulse_192.png", "sizes": "192x192" }]
       }
     ]
   }

@@ -5,6 +5,13 @@ hr {
     width: 50% !important;
 }
 
+.stats {
+    padding-top: 5vh;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
 .div-1 {
     margin-top: 2vh;
 }
@@ -14,25 +21,9 @@ hr {
     font-weight: 800;
     justify-content: center;
     align-items: flex-end;
-    font-size: xx-large;
+    font-size: xxx-large;
+    margin-bottom: 0;
     line-height: 7vw;
-}
-
-#last {
-    margin-left: 4vw;
-}
-
-.userprofile .profilepic {
-    display: flex;
-    justify-content: center;
-}
-
-.userprofile .profilepic img {
-    object-fit: cover;
-    object-position: center;
-    width: 25vw;
-    height: auto;
-    border-radius: 100px;
 }
 
 .short-statistics {
@@ -61,19 +52,20 @@ hr {
 
 /* Statistics 1 */
 .div-2 .stat-container {
-    margin-top: 2vh;
+    /* margin-top: 2vh;
     margin-left: 10vw;
-    margin-right: 2vw;
-    margin-bottom: 10vw;
+    margin-right: 2vw; */
+    margin-bottom: 5vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     font-size: 85px;
 }
 
 .div-2 .stat-container .title {
+    text-align: center;
     padding-left: 0.5vw;
-    margin-top: 2vh;
     font-size: 7vw;
     font-weight: bold;
 }
@@ -99,9 +91,7 @@ hr {
 }
 
 .div-3 .stat-container {
-    margin-top: 2vh;
-    margin-left: 10vw;
-    margin-right: 2vw;
+    flex-direction: column;
     margin-bottom: 10vw;
     top: 10%;
     display: flex;
@@ -111,6 +101,7 @@ hr {
 }
 
 .div-3 .stat-container .title {
+    /* text-align: center; */
     padding-left: 0.5vw;
     font-size: 7vw;
     font-weight: bold;

@@ -21,7 +21,7 @@
     },
     {
         "title": "Mental Health Survey",
-        "description": "Let us know how you have been feeling lately.",
+        "description": "Let us know how you have been feeling.",
         "duration": "30/40 seconds",
         "regularity": "every 3 days",
         "questions": [
