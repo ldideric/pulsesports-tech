@@ -1,69 +1,10 @@
 body {
     user-select: none;
-    overflow-y: hidden;
 }
 
 .main-content-main {
     padding: 1vh;
 }
-
-
-.popup {
-    display: none;
-
-    z-index: 1000;
-
-    position: absolute;
-
-    width: 80vw;
-    height: fit-content;
-
-    background-color: #123456;
-    color: white;
-
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%, 0);
-
-    padding: 3vw;
-
-    border-radius: 3vw;
-}
-
-.popup-title {
-    font-size: 9vw;
-    font-weight: 700;
-
-    text-align: center;
-}
-
-.popup-close-button {
-    position: absolute;
-
-    width: 4vh;
-    height: 4vh;
-
-    border-radius: 50%;
-
-    border: none;
-    background-color: white;
-
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
-
-    font-size: larger;
-    font-weight: 700;
-}
-
-
-
-
-
-
-
-
 
 /* --------- MAIN PAGE --------- */
 
@@ -74,7 +15,8 @@ body {
 .logo-div {
     position: relative;
     text-align: center;
-    padding: 10vw;
+    padding: 5vw;
+    transition: 1.3s padding ease-out;
 }
 
 .logo-img {
@@ -90,10 +32,13 @@ body {
 }
 
 .main-date p {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     font-weight: 400;
-    margin-right: 50vw;
+
     text-align: center;
+
+    /* transition: 1.5s all ease; */
+    /* transition-property: margin-right, font-size; */
 }
 
 /* Line under header photo */
@@ -108,9 +53,6 @@ body {
 /* --------- End Header --------- */
 
 /* --------- Start Line 1 --------- */
-.main-boxes {
-    margin-top: 70vh;
-}
 
 .main-reaching-circle {
     position: relative;
@@ -141,7 +83,6 @@ body {
     position: absolute;
 
     text-align: center;
-    font-size: 4vw;
 
     top: 60%;
     left: 50%;
@@ -183,7 +124,10 @@ body {
     transform: translate(-50%, -50%);
 
     color: #123456;
+
+    /* text-shadow: 1px 1px 20px rgba(255,255,255,1); */
 }
+
 
 .main-button-full-report {
     display: block;
@@ -208,6 +152,8 @@ body {
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.43);
 }
 
+
+
 .main-date-container {
     position: relative;
 
@@ -221,10 +167,11 @@ body {
 
     border-radius: 3vh;
 
-    -webkit-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.6);
-    box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
 }
+
 
 .main-date-dates {
     display: flex;
@@ -293,10 +240,12 @@ body {
     color: black !important;
 }
 
-.main-date-text-container {
+
+.main-date-text {
     position: relative;
 
     margin-top: 1vh;
+    
     margin-left: auto;
     margin-right: auto;
 
@@ -307,37 +256,60 @@ body {
 
     border-radius: 3vh;
 
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 2vh;
 }
 
-.main-date-text {
-    padding: 1vh;
-    padding-left: 2vh;
-}
 
-.main-date-text-sport-text {
-    font-weight: 800;
-}
 
-.main-date-text-level-text {
-    font-weight: 800;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------- Start Navbar --------- */
 
 .navbar {
-    position: fixed;
-
+    /* background-color: red; */
     width: 100%;
-    
+    position: fixed;
     bottom: 0;
 }
 
 .navbarfade {
     background-image: linear-gradient(to bottom, rgb(255, 0, 0, 0), rgb(255, 255, 255) 100%);
-    
     width: 100%;
     height: 2vh;
 }

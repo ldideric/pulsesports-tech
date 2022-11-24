@@ -1,42 +1,98 @@
-// login script
+let oldscripts = [];
 
-import * as data from './data.js';
+async function get(path) { // Returns JSON of url/path
+    let value;
+    await fetch(path)
+        .then(response => response.text())
+        .then((data) => { value = data; });
+    return value;
+}
 
-(function checkUrl() {
-    const url = new URL(window.location.href);
-    const sessioncanceled = Boolean(url.searchParams.get("session-canceled"));
-    if (sessioncanceled == true) {
-        showError('Previous session got canceled');
-    }
-}());
+async function parseToHTML(text) {
+    const parser = new DOMParser();
+    return parser.parseFromString(text, 'text/html');
+}
 
-async function saveLogin() {
-    let userdata = await data.get();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    if (userdata[username] != undefined) {
-        if (userdata[username].password == password) {
-            localStorage.setItem('currentsession', JSON.stringify({"username": `${username}`, "password": `${password}`}))
-            window.location.href = 'home.html';
-            localStorage.setItem('logotransition', 'true');
-        } else {
-            showError('Incorrect password');
-        }
+// load page
+async function loadToPage(loadedhtml, page) {
+    // shows / hides navbar based on page
+    const navbar = document.querySelector('.navbar');
+    if (page == 'login') {
+        navbar.style.display = 'none';
     } else {
-        showError('Username not found');
+        navbar.style.display = 'inline';
     }
+    const appendhere = document.querySelector('.appendhere');
+    appendhere.style.opacity = 1;
+
+    let timeout = 200;
+    if (localStorage.getItem('logotransition') == 'true') {
+        timeout = 150;
+    }
+
+    setTimeout(() => {
+        appendhere.style.opacity = 0;
+    }, timeout)
+
+    setTimeout(async () => {
+        appendhere.innerHTML = '';
+        const mainhead = document.querySelector('head');
+        // Remove old scripts from html
+        mainhead.querySelectorAll('script').forEach(i => {
+            if (i.classList.contains('imported')) {
+                i.parentNode.removeChild(i);
+            }
+        });
+        oldscripts = [];
+        // import styling
+        const links = loadedhtml.querySelectorAll('link');
+        links.forEach(i => {
+            appendhere.appendChild(i)
+        });
+        // import body
+        const body = loadedhtml.querySelector('body');
+        appendhere.appendChild(body);
+        // import scripts
+        const scripts = loadedhtml.querySelectorAll('head script');
+        scripts.forEach(i => {
+            let script = document.createElement('script');
+            script.type = 'module';
+            script.src = i.src;
+            script.classList.add('imported');
+            mainhead.appendChild(script);
+        });
+
+        // import js script of page
+        const remote = await import(`./${page}.js`);
+        remote.main();
+    }, timeout * 2 + timeout / 7)
+    setTimeout(() => {
+        appendhere.style.opacity = 1;
+    }, timeout * 4)
 }
 
-document.querySelector('.login-div #submit').addEventListener('click', saveLogin);
+// calls to load page
+async function changePage(page) {
+    const loadedtext = await get(`../${page}.html`);
+    const loadedhtml = await parseToHTML(loadedtext);
+    loadToPage(loadedhtml, page);
+};
 
-function showError(error) {
-    const output = document.querySelector('p.outputtext');
-    output.style.display = 'inline';
-    output.textContent = error;
+// Hash handler
+function getHash() {
+    return window.location.hash.substring(1);
+};
+
+window.addEventListener('hashchange', () => {
+    if (getHash() == '' || getHash() == 'disable') {
+        changePage('login');
+    } else {
+        changePage(getHash());
+    }
+})
+
+if (getHash() == '' || getHash() == 'disable') {
+    changePage('login');
+} else {
+    changePage(getHash());
 }
-
-
-// for the javascript navigator:
-//     https://link.link#home etc.
-console.log(navigator);
