@@ -1,5 +1,5 @@
 export function main() {
-    document.getElementById('logout').addEventListener('click', () => {
+    document.getElementById('setting-logout').addEventListener('click', () => {
         window.location.href = '#';
     });
 }
