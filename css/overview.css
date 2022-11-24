@@ -12,16 +12,6 @@ hr {
     justify-content: space-between !important;
 }
 
-.carousel-control-next {
-    position: absolute !important;
-    right: -3vw !important;
-}
-
-.carousel-control-prev {
-    position: absolute !important;
-    left: -5vw !important;
-}
-
 .div-1 {
     margin-top: 2vh;
 }
@@ -62,11 +52,12 @@ hr {
 
 /* Statistics 1 */
 .div-2 .stat-container {
-    margin-top: 2vh;
+    /* margin-top: 2vh;
     margin-left: 10vw;
-    margin-right: 2vw;
-    margin-bottom: 10vw;
+    margin-right: 2vw; */
+    margin-bottom: 5vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     font-size: 85px;
@@ -100,9 +91,7 @@ hr {
 }
 
 .div-3 .stat-container {
-    margin-top: 2vh;
-    margin-left: 10vw;
-    margin-right: 2vw;
+    flex-direction: column;
     margin-bottom: 10vw;
     top: 10%;
     display: flex;
@@ -112,7 +101,7 @@ hr {
 }
 
 .div-3 .stat-container .title {
-    text-align: center;
+    /* text-align: center; */
     padding-left: 0.5vw;
     font-size: 7vw;
     font-weight: bold;
