@@ -5,6 +5,25 @@ hr {
     width: 50% !important;
 }
 
+hr:first-of-type {
+    margin-top: 1vh !important;
+}
+
+
+
+#date {
+    margin-left: 8vw;
+    margin-top: 4vh;
+    font-weight: 400;
+    font-size: 1.54vh;
+}
+
+#title {
+    margin-left: 8vw;
+    font-weight: 800;
+    font-size: 3.44vh;
+}
+
 .stats {
     padding-top: 5vh;
     display: flex !important;
@@ -53,6 +72,12 @@ hr {
 .short-statistics {
     display: flex;
     text-align: center;
+    justify-content: space-around;
+    background-color: #ededed;
+    -webkit-box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    /* border-radius: 2.13vh; */
 }
 
 .short-statistics div {
