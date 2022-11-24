@@ -74,6 +74,8 @@ body {
     align-items: center;
     width: 90vw;
     margin-left: 5vw;
+    position: fixed;
+    bottom: 15vh;
 }
 
 .setting {
@@ -92,8 +94,16 @@ body {
 }
 
 .setting-title {
-    margin-left: 5vw;
+    margin-left: 7vw;
     font-weight: 600;
     font-size: 1.8vh;
     margin-bottom: 0.3vh;
+}
+
+.setting-line {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
