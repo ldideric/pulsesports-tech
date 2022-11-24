@@ -18,9 +18,15 @@ async function loadToPage(loadedhtml, page) {
     // shows / hides navbar based on page
     const navbar = document.querySelector('.navbar');
     if (page == 'login' || page == 'question') {
-        navbar.style.display = 'none';
+        navbar.style.opacity = 0;
+        setTimeout(() => {
+            navbar.style.display = 'none';
+        }, 300)
     } else {
         navbar.style.display = 'inline';
+        setTimeout(() => {
+            navbar.style.opacity = 1;
+        }, 100)
     }
     const appendhere = document.querySelector('.appendhere');
     appendhere.style.opacity = 1;

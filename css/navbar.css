@@ -5,9 +5,11 @@
     width: 100%;
     position: fixed !important;
     bottom: 0 !important;
+    opacity: 0;
     display: none;
     padding: 0 !important;
     line-height: 20px !important;
+    transition: 0.3s opacity ease !important;
 }
 
 .navbarfade {
