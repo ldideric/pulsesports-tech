@@ -5,11 +5,54 @@ hr {
     width: 50% !important;
 }
 
+hr:first-of-type {
+    margin-top: 1vh !important;
+}
+
+
+
+#date {
+    margin-left: 8vw;
+    margin-top: 4vh;
+    font-weight: 400;
+    font-size: 1.54vh;
+}
+
+#title {
+    margin-left: 8vw;
+    font-weight: 800;
+    font-size: 3.44vh;
+}
+
 .stats {
     padding-top: 5vh;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
+}
+
+.procent-div {
+    position: absolute;
+    font-weight: bold;
+    flex-direction: column;
+    color: rgb(69, 69, 69);
+    line-height: 1vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    font-size: x-large;
+    /* background-color: blue; */
+    top: 0;
+    left: 0;
+}
+
+.procent {
+    margin-left: 2vw;
+    font-size: 60%;
+    font-weight: 500;
 }
 
 .div-1 {
@@ -29,6 +72,7 @@ hr {
 .short-statistics {
     display: flex;
     text-align: center;
+    justify-content: space-around;
 }
 
 .short-statistics div {
@@ -71,6 +115,7 @@ hr {
 }
 
 .div-2 #circlegen {
+    position: relative;
     height: 40vw;
     width: 40vw;
     margin-bottom: 3vh;

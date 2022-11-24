@@ -3,12 +3,16 @@
     margin-top: 4vh;
     font-weight: 400;
     font-size: 1.54vh;
+
+    color: var(--regulartext);
 }
 
 #title {
     margin-left: 8vw;
     font-weight: 800;
     font-size: 3.44vh;
+    
+    color: var(--regulartext);
 }
 
 .surveyitems {
@@ -17,7 +21,7 @@
 }
 
 .survey {
-    background-color: #ededed;
+    background-color: var(--backgroundseccondary);
     width: 90vw;
     padding-bottom: 2vh;
     margin-left: 5vw;
@@ -38,6 +42,8 @@
     font-size: 2.84vh;
     margin-left: 6vw;
     padding-top: 1.5vh;
+
+    color: var(--regulartext);
 }
 
 .main-date-dates {
@@ -57,7 +63,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #FFFFFF;
+    background-color: var(--background);
 
     width: 12vw;
     height: 7vh;
@@ -77,7 +83,7 @@
     
     font-size: 14px;
 
-    color: #9FA2AE;
+    color: var(--seccondarytext);
 }
 
 .main-date-day-day {
@@ -86,23 +92,25 @@
 
     font-weight: 800;
     font-size: 20px;
+
+    color: var(--regulartext);
 }
 
 .main-date-day-active {
-    background-color: #123456;
+    background-color: var(--bluecolor);
 }
 
 .main-date-day-active .main-date-day-week {
-    color: #FFFFFF !important;
+    color: var(--tertiarytext) !important;
 }
 
 .main-date-day-active .main-date-day-day {
-    color: #FFFFFF !important;
+    color: var(--tertiarytext) !important;
     opacity: 0.7 !important;
 }
 
 .main-date-day-sport-day {
-    border: 5px solid #123456;
+    border: 5px solid var(--bluecolor);
 
     height: calc(7vh - 10px);
     width: calc(12vw - 10px);
@@ -117,12 +125,14 @@
     margin-left: auto;
     margin-right: auto;
 
-    height: calc(25vh - 120px);
+    height: fit-content;
     width: 90%;
 
-    background-color: white;
+    background-color: var(--background);
 
     border-radius: 3vh;
+
+    color: var(--regulartext);
 
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
@@ -147,6 +157,8 @@
     padding-top: 1.5vh;
     font-weight: 500;
     font-size: 1.66vh;
+
+    color: var(--regulartext);
 }
 
 .main-line {
@@ -167,12 +179,16 @@
     margin-left: 6vw;
     font-weight: 400;
     font-size: 1.54vh;
+
+    color: var(--regulartext);
 }
 
 .dataIcon {
     width: 2vh;
     height: 2vh;
     margin-right: 2.5vw;
+
+    fill: var(--regulartext);
 }
 
 .startsurvey {
@@ -180,7 +196,7 @@
     align-items: center;
     justify-content: center;
     width: 30vw;
-    background-color: #123456;
+    background-color: var(--bluecolor);
     color: white;
     padding: 1vh;
     border-radius: 1vh;
