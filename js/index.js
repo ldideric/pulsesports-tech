@@ -45,6 +45,7 @@ async function loadToPage(loadedhtml, page) {
         });
         oldscripts = [];
         // import styling
+        let reqstylecount = 0;
         let stylecount = 0;
         const links = loadedhtml.querySelectorAll('link');
         links.forEach(i => {
@@ -53,38 +54,38 @@ async function loadToPage(loadedhtml, page) {
             style.setAttribute("href", i.href)
             style.addEventListener('load', () => {
                 stylecount++;
-                loadMore()
+                checkStyleLoaded();
             })
+            reqstylecount++;
             appendhere.appendChild(style);
-            // appendhere.appendChild(i)
         });
         
-        async function loadMore() {
-            const appendhere = document.querySelector('.appendhere');
-            // console.log(stylecount)
-            // console.log(appendhere)
-            // import body
-            const body = loadedhtml.querySelector('body');
-            console.log('body ' + body)
-            appendhere.appendChild(body);
-            // import scripts
-            const scripts = loadedhtml.querySelectorAll('head script');
-            scripts.forEach(i => {
-                let script = document.createElement('script');
-                script.type = 'module';
-                script.src = i.src;
-                script.classList.add('imported');
-                mainhead.appendChild(script);
-            });
+        async function checkStyleLoaded() {
+            if (stylecount == reqstylecount) {
+                const appendhere = document.querySelector('.appendhere');
+                // import body
+                const body = loadedhtml.querySelector('body');
+                appendhere.appendChild(body);
+                // import scripts
+                const scripts = loadedhtml.querySelectorAll('head script');
+                scripts.forEach(i => {
+                    let script = document.createElement('script');
+                    script.type = 'module';
+                    script.src = i.src;
+                    script.classList.add('imported');
+                    mainhead.appendChild(script);
+                });
 
-            // import js script of page
-            const remote = await import(`./${page}.js`);
-            remote.main();
+                // import js script of page
+                const remote = await import(`./${page}.js`);
+                remote.main();
+
+                setTimeout(() => {
+                    appendhere.style.opacity = 1;
+                }, timeout)
+            }
         }
     }, timeout * 2 + timeout / 7)
-    setTimeout(() => {
-        appendhere.style.opacity = 1;
-    }, timeout * 4)
 }
 
 // calls to load page
