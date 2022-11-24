@@ -89,7 +89,7 @@ async function loadToPage(loadedhtml, page) {
 
 // calls to load page
 async function changePage(page) {
-    const loadedtext = await get(`../${page}.html`);
+    const loadedtext = await get(`../pageLoader/${page}.html`);
     const loadedhtml = await parseToHTML(loadedtext);
     loadToPage(loadedhtml, page);
 };

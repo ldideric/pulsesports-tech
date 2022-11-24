@@ -1,5 +1,5 @@
 export async function main() {
-    await import('./lib/progressbar.min.js');
+    await import('../js/lib/progressbar.min.js');
 
     let WorkCircle, PulseCircle, KCALCircle, PulseIndexCircle, HeartRateCircle, SleepTimeCircle;
 

@@ -1,6 +1,6 @@
 // login script
 
-import * as data from './data.js';
+import * as data from '../js/data.js';
 
 export function main() {
     async function saveLogin() {

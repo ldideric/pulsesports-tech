@@ -24,7 +24,7 @@ export async function main() {
     document.querySelector('button.popup-close-button').addEventListener('click', GetInfoReaching);
     document.querySelector('button.main-reaching-button').addEventListener('click', GetInfoReaching);
 
-    await import('./lib/progressbar.min.js');
+    await import('../js/lib/progressbar.min.js');
     let ReachingCircle;
     let ReachingVisible = false
 

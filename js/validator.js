@@ -1,4 +1,4 @@
-import * as data from './data.js'
+import * as data from '../js/data.js'
 
 async function main() {
     const userdata = await data.get();

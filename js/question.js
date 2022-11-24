@@ -1,4 +1,4 @@
-const url = "./js/surveys.json";
+const url = "../js/json/surveys.json";
 
 document.getElementById('backButton').addEventListener('click', () => {
     window.location.href = './#survey';

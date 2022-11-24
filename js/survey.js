@@ -1,5 +1,5 @@
 export function main() {
-    const url = "./js/surveys.json";
+    const url = "../js/json/surveys.json";
     let surveyData;
 
     async function getData() {

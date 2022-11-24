@@ -1,4 +1,4 @@
-const url = './userdata.json'; // Path for clothing json
+const url = '../js/json/userdata.json'; // Path for clothing json
 
 export async function get() { // Returns JSON of url/path
     let value;
