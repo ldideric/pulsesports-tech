@@ -17,7 +17,7 @@ async function parseToHTML(text) {
 async function loadToPage(loadedhtml, page) {
     // shows / hides navbar based on page
     const navbar = document.querySelector('.navbar');
-    if (page == 'login') {
+    if (page == 'login' || page == 'question') {
         navbar.style.display = 'none';
     } else {
         navbar.style.display = 'inline';
