@@ -48,28 +48,31 @@ const profile = `<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person ico
 
 
 export function update(page) {
-    console.log(`updating to ${page}`)
+    const surveyicon = document.getElementById('navbar-icon-survey')
     if (page == 'survey') {
-        document.getElementById('navbar-icon-survey').innerHTML = surveyActive;
+        surveyicon.innerHTML = surveyActive;
     } else {
-        document.getElementById('navbar-icon-survey').innerHTML = survey;
+        surveyicon.innerHTML = survey;
     }
     
+    const homeicon = document.getElementById('navbar-icon-home')
     if (page == 'home') {
-        document.getElementById('navbar-icon-home').innerHTML = homeActive;
+        homeicon.innerHTML = homeActive;
     } else {
-        document.getElementById('navbar-icon-home').innerHTML = home;
+        homeicon.innerHTML = home;
     }
     
+    const overviewicon = document.getElementById('navbar-icon-overview')
     if (page == 'overview') {
-        document.getElementById('navbar-icon-overview').innerHTML = overviewActive;
+        overviewicon.innerHTML = overviewActive;
     } else {
-        document.getElementById('navbar-icon-overview').innerHTML = overview;
+        overviewicon.innerHTML = overview;
     }
     
+    const profileicon = document.getElementById('navbar-icon-profile')
     if (page == 'profile') {
-        document.getElementById('navbar-icon-profile').innerHTML = profileActive;
+        profileicon.innerHTML = profileActive;
     } else {
-        document.getElementById('navbar-icon-profile').innerHTML = profile;
+        profileicon.innerHTML = profile;
     }
 }
