@@ -21,6 +21,8 @@ export async function main() {
         mainboxes.style.marginTop = '0vh';
     }, timeout)
 
+    document.querySelector('button.popup-close-button').addEventListener('click', GetInfoReaching);
+    document.querySelector('button.main-reaching-button').addEventListener('click', GetInfoReaching);
 
     await import('./lib/progressbar.min.js');
     let ReachingCircle;
