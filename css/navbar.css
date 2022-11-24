@@ -10,6 +10,7 @@
     padding: 0 !important;
     line-height: 20px !important;
     transition: 0.3s opacity ease !important;
+    z-index: 1000;
 }
 
 .navbarfade {

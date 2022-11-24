@@ -5,9 +5,16 @@ hr {
     width: 50% !important;
 }
 
+.stats {
+    padding-top: 5vh;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
 .carousel-control-next {
     position: absolute !important;
-    right: -5vw !important;
+    right: -3vw !important;
 }
 
 .carousel-control-prev {
@@ -27,19 +34,6 @@ hr {
     font-size: xxx-large;
     margin-bottom: 0;
     line-height: 7vw;
-}
-
-.userprofile .profilepic {
-    display: flex;
-    justify-content: center;
-}
-
-.userprofile .profilepic img {
-    object-fit: cover;
-    object-position: center;
-    width: 25vw;
-    height: auto;
-    border-radius: 100px;
 }
 
 .short-statistics {
