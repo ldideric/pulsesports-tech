@@ -4,14 +4,32 @@
 
 /* Header Photo */
 
+body {
+    padding: 1vh;
+}
+
 .logo-div {
     position: relative;
     text-align: center;
+    align-items: center;
 }
 
 .logo-img {
-    margin-top: 4vh;
-    width: 70vw;
+    align-items: center;
+
+    background-image: var(--logo);
+    /* background-image: url('../img/logowhite.png'); */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height: 10vh;
+
+    background-size: 90%;
+
+    object-fit: cover !important;
 }
 
 .date-div {
@@ -22,6 +40,8 @@
 
 .date-div p {
     font-size: 1.6vh;
+
+    color: var(--regulartext);
 }
 
 .main-line {
@@ -54,12 +74,16 @@
     margin-top: 2vh;
     font-weight: 700;
     font-size: 2.3vh;
+
+    color: var(--regulartext);
 }
 
 .profile-desc, .profile-lvl {
     margin-top: 0.5vh;
     font-weight: 400;
     font-size: 1.6vh;
+
+    color: var(--regulartext);
 }
 
 /* Settings */
@@ -78,6 +102,9 @@
     display: flex;
     align-items: center;
     width: 90vw;
+
+    color: var(--regulartext);
+    fill: var(--regulartext);
 }
 
 .setting-icon-svg {
