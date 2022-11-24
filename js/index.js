@@ -32,13 +32,8 @@ async function loadToPage(loadedhtml, page) {
     appendhere.style.opacity = 1;
 
     let timeout = 200;
-    if (localStorage.getItem('logotransition') == 'true') {
-        timeout = 150;
-    }
 
-    setTimeout(() => {
-        appendhere.style.opacity = 0;
-    }, timeout)
+    appendhere.style.opacity = 0;
 
     setTimeout(async () => {
         appendhere.innerHTML = '';
@@ -91,7 +86,7 @@ async function loadToPage(loadedhtml, page) {
                 }, timeout)
             }
         }
-    }, timeout * 2 + timeout / 7)
+    }, timeout)
 }
 
 // calls to load page

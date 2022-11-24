@@ -9,6 +9,7 @@ export function main() {
     }
 
     document.getElementById('setting-logout').addEventListener('click', () => {
+        localStorage.setItem('currentsession', JSON.stringify({"username": '', "password": ''}));
         window.location.href = '#';
     });
 
