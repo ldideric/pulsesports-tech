@@ -101,7 +101,7 @@ async function loadToPage(loadedhtml, page) {
 
                 // import js script of page
                 const remote = await import(`./${page}.js`);
-                remote.main();
+                await remote.main();
 
                 setTimeout(() => {
                     appendhere.style.opacity = 1;

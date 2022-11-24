@@ -1,4 +1,4 @@
-export function main() {
+export async function main() {
     const url = "../js/json/surveys.json";
     let surveyData;
 
@@ -8,7 +8,7 @@ export function main() {
         return surveyData;
     }
 
-    (async function loadSurveys() {
+    await (async function loadSurveys() {
         let isDone;
         let jsondata = await getData();
         if (sessionStorage.getItem("0IsDone") === null) {
