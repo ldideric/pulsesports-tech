@@ -2,9 +2,9 @@
 
 import * as data from '../js/data.js';
 
-export function main() {
+export async function main() {
+    let userdata = await data.get();
     async function saveLogin() {
-        let userdata = await data.get();
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         
@@ -21,7 +21,13 @@ export function main() {
         }
     }
 
-    document.querySelector('.login-div #submit').addEventListener('click', saveLogin);
+    const currentsession = JSON.parse(localStorage.getItem('currentsession'));
+    if (userdata[currentsession.username] != '' || userdata[currentsession.username].password == currentsession.password) {
+        window.location.href = '#home';
+        localStorage.setItem('logotransition', 'true');
+    } else {
+        document.querySelector('.login-div #submit').addEventListener('click', saveLogin);
+    }
 
     function showError(error) {
         const output = document.querySelector('p.outputtext');
