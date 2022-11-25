@@ -36,7 +36,7 @@ export async function main(type) {
 
     let SetupHud = async function() {
         userData = await getUserData();
-        userData = userData.admin.timeline['01-01-2000'].statistics;
+        userData = userData.siwan.timeline['01-01-2000'].statistics;
 
         // Full circle
         let circlecurrent;
