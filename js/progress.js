@@ -15,7 +15,7 @@ export async function main(type) {
             color: color,
             trailColor: trailColor,
             strokeWidth: 20,
-            trailWidth: 20,
+            trailWidth: 19,
             duration: 2000,
             easing: "easeInOut",
             fill: "transparent",

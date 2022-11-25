@@ -38,7 +38,19 @@ html, body {
 }
 
 /* Dark */
-.dark {
+/* .dark {
+    --background: #202125;
+    --backgroundseccondary: #303135;
+    --regulartext: white;
+    --seccondarytext: #848484;
+    --tertiarytext: white;
+    --circletextcolor: white;
+    --bluecolor: #044585;
+    --logo: url('../img/logowhite.png');
+    --buttoncolor: rgb(170, 170, 170);
+} */
+
+:root {
     --background: #202125;
     --backgroundseccondary: #303135;
     --regulartext: white;
