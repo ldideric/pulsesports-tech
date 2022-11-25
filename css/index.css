@@ -5,3 +5,30 @@
 body {
     background-color: var(--background);
 }
+
+.indexlogo-div {
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.indexlogo-img {
+    align-items: center;
+
+    background-image: var(--logo);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 60%;
+    height: 10vh;
+
+    background-size: 90%;
+
+    object-fit: cover !important;
+
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
