@@ -1,5 +1,5 @@
 body {
-    background-color: var(--background);
+    background-color: var(--background) !important;
 }
 
 hr {
@@ -220,5 +220,5 @@ hr:first-of-type {
 
 .carousel {
     fill: var(--regulartext) !important;
-    color: var(--regulartext) !important;
-}
+    content: var(--regulartext) !important;
+} 

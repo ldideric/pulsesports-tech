@@ -1,3 +1,7 @@
+body {
+    background-color: var(--background) !important;
+}
+
 #date {
     margin-left: 8vw;
     margin-top: 4vh;

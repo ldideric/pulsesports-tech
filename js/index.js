@@ -80,10 +80,10 @@ async function loadToPage(loadedhtml, page) {
                 appendhere.appendChild(body);
                 // import scripts
                 const scripts = loadedhtml.querySelectorAll('head script');
-                scripts.forEach(i => {
+                await scripts.forEach(async i => {
                     let script = document.createElement('script');
                     script.type = 'module';
-                    script.src = i.src;
+                    script.src = await i.src;
                     script.classList.add('imported');
                     mainhead.appendChild(script);
                 });
@@ -95,6 +95,8 @@ async function loadToPage(loadedhtml, page) {
                 setTimeout(() => {
                     appendhere.style.opacity = 1;
                 }, timeout)
+                const themetoggler = await import('./themetoggler.js');
+                themetoggler.editbody();
             }
         }
     }, timeout)
