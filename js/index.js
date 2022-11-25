@@ -95,6 +95,8 @@ async function loadToPage(loadedhtml, page) {
                 setTimeout(() => {
                     appendhere.style.opacity = 1;
                 }, timeout)
+                const themetoggler = await import('./themetoggler.js');
+                themetoggler.editbody();
             }
         }
     }, timeout)

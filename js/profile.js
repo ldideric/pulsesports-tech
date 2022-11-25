@@ -17,8 +17,8 @@ export async function main() {
     }());
 
     const themetoggler = await import('./themetoggler.js');
+    themetoggler.editbody();
     document.querySelector('#toggle-theme').addEventListener('click', () => {
         themetoggler.run();
     })
-    themetoggler.editbody();
 }
