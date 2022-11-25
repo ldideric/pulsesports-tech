@@ -2,11 +2,13 @@ body {
     background-color: var(--background) !important;
 }
 
-hr {
+.main-line {
     margin: auto !important;
-    margin-top: 2vh !important;
-    margin-bottom: 2vh !important;
     width: 50% !important;
+    position: relative !important;
+    width: 70% !important;
+    margin: auto !important;
+    color: var(--circletextcolor);
 }
 
 hr:first-of-type {
