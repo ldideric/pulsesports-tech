@@ -11,9 +11,9 @@ export async function main() {
 
     (async function updateData() {
         userData = await data.get();
-        document.getElementById("profile-name").innerHTML = userData.admin.name;
-        document.getElementById("profile-desc").innerHTML = userData.admin.sport;
-        document.getElementById("profile-lvl").innerHTML = userData.admin.level;
+        document.getElementById("profile-name").innerHTML = userData.siwan.name;
+        document.getElementById("profile-desc").innerHTML = userData.siwan.sport;
+        document.getElementById("profile-lvl").innerHTML = userData.siwan.level;
     }());
 
     const themetoggler = await import('./themetoggler.js');
