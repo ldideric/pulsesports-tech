@@ -130,3 +130,30 @@ if (getHash() == '' || getHash() == 'disable') {
 } else {
     changePage(getHash());
 }
+
+function createMeta(mode) {
+    const meta = document.createElement('meta');
+    meta.setAttribute('name', 'theme-color');
+    meta.setAttribute('content', mode);
+    return meta;
+}
+function createMeta2(mode) {
+    const meta = document.createElement('meta');
+    meta.setAttribute('name', 'background-color');
+    meta.setAttribute('content', mode);
+    return meta;
+}
+
+const darkMode = '<meta name="theme-color" content="black">';
+const lightMode = '<meta name="theme-color" content="white">';
+const headindex = document.querySelector('head');
+if (localStorage.getItem('darkMode') == null) {
+    localStorage.setItem('darkMode', 'false');
+}
+if (localStorage.getItem('darkMode') == 'false') {
+    headindex.appendChild(createMeta('white'));
+    headindex.appendChild(createMeta2('white'));
+} else {
+    headindex.appendChild(createMeta('black'));
+    headindex.appendChild(createMeta2('black'));
+}

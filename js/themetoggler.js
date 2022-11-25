@@ -1,3 +1,5 @@
+
+
 export function run() {
     if (localStorage.getItem('darkMode') == null) {
         localStorage.setItem('darkMode', 'false');
