@@ -35,6 +35,7 @@ html, body {
     --bluecolor: #123456;
     --logo: url('../img/logo.png');
     --buttoncolor: #123456;
+    --navbackground: #ffffff4d;
 }
 
 /* Dark */
@@ -48,4 +49,5 @@ html, body {
     --bluecolor: #044585;
     --logo: url('../img/logowhite.png');
     --buttoncolor: rgb(170, 170, 170);
+    --navbackground: #2021254d;
 }

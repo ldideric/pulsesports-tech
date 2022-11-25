@@ -17,27 +17,28 @@ async function parseToHTML(text) {
 async function loadToPage(loadedhtml, page) {
     // shows / hides navbar based on page
     const navbar = document.querySelector('.navbar');
+    const navbartimeout = 50;
     if (page == 'login' || page == 'question') {
         navbar.style.opacity = 0;
         setTimeout(() => {
             navbar.style.display = 'none';
-        }, 150)
+        }, navbartimeout)
     } else if (page == 'profile') {
 
         navbar.style.display = 'inline';
         setTimeout(() => {
             navbar.style.opacity = 1;
-        }, 300)
+        }, navbartimeout * 2)
     } else {
         navbar.style.display = 'inline';
         setTimeout(() => {
             navbar.style.opacity = 1;
-        }, 300)
+        }, navbartimeout * 2)
     }
     const appendhere = document.querySelector('.appendhere');
     appendhere.style.opacity = 1;
 
-    let timeout = 200;
+    let timeout = 100;
 
     appendhere.style.opacity = 0;
 
