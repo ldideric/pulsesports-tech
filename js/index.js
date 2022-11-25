@@ -27,22 +27,6 @@ async function loadToPage(loadedhtml, page) {
         navbar.style.display = 'inline';
         setTimeout(() => {
             navbar.style.opacity = 1;
-
-            document.getElementById('toggle-theme').addEventListener('click', () => {
-                darkLight2()
-            });
-    
-            function darkLight2() {
-                let cat = localStorage.getItem('darkMode');
-
-                if (!cat) {
-                    document.body.classList.toggle("dark");
-                    localStorage.setItem('darkMode', true)
-                } else {
-                    document.body.classList.toggle("dark");
-                    localStorage.setItem('darkMode', false)
-                }
-            }
         }, 300)
     } else {
         navbar.style.display = 'inline';
@@ -88,6 +72,11 @@ async function loadToPage(loadedhtml, page) {
                 const appendhere = document.querySelector('.appendhere');
                 // import body
                 const body = loadedhtml.querySelector('body');
+                if (localStorage.getItem('darkMode') == 'true') {
+                    body.classList.add('dark');
+                } else {
+                    body.className = '';
+                }
                 appendhere.appendChild(body);
                 // import scripts
                 const scripts = loadedhtml.querySelectorAll('head script');

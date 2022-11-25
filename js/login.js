@@ -21,12 +21,13 @@ export async function main() {
         }
     }
 
+    document.querySelector('.login-div #submit').addEventListener('click', saveLogin);
     const currentsession = JSON.parse(localStorage.getItem('currentsession'));
-    if (userdata[currentsession.username] != '' || userdata[currentsession.username].password == currentsession.password) {
-        window.location.href = '#home';
-        localStorage.setItem('logotransition', 'true');
-    } else {
-        document.querySelector('.login-div #submit').addEventListener('click', saveLogin);
+    if (userdata[currentsession.username] != '' && userdata[currentsession.username] != undefined) {
+        if (userdata[currentsession.username].password == currentsession.password) {
+            window.location.href = '#home';
+            localStorage.setItem('logotransition', 'true');
+        }
     }
 
     function showError(error) {

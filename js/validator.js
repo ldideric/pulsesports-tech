@@ -6,7 +6,7 @@ async function main() {
         localStorage.setItem('currentsession', JSON.stringify({"username": '', "password": ''}))
     }
     const currentsession = JSON.parse(localStorage.getItem('currentsession'));
-    if (userdata[currentsession.username] == '' || userdata[currentsession.username].password != currentsession.password) {
+    if (userdata[currentsession.username] == undefined || userdata[currentsession.username].password != currentsession.password) {
         window.location.href = './#login';
         localStorage.setItem('currentsession', JSON.stringify({"username": '', "password": ''}));
     }
