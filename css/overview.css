@@ -220,5 +220,5 @@ hr:first-of-type {
 
 .carousel {
     fill: var(--regulartext) !important;
-    color: var(--regulartext) !important;
-}
+    content: var(--regulartext) !important;
+} 
