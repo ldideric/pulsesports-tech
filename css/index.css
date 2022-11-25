@@ -1,3 +1,7 @@
 .appendhere {
     transition: 0.2s opacity ease;
 }
+
+body {
+    background-color: var(--background);
+}
