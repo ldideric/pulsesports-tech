@@ -222,3 +222,8 @@ hr:first-of-type {
     fill: var(--regulartext) !important;
     content: var(--regulartext) !important;
 } 
+
+.carousel-control-next span {
+    /* background-color: purple !important; */
+    color: blue !important;
+}

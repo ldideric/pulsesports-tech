@@ -14,4 +14,11 @@ export async function main() {
     const prevbutton = document.querySelectorAll('.carousel-control-prev')
     addListener(nextbutton, 'next');
     addListener(prevbutton, 'prev');
+
+    if (localStorage.getItem('darkMode') == 'true') {
+        document.querySelectorAll('.carousel').forEach(i => {
+            i.classList.remove('carousel-dark');
+            i.classList.add('carousel-white')
+        });
+    }
 }
