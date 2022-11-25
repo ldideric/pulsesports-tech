@@ -54,7 +54,7 @@ export async function main(type) {
         }
         
         if (circlecurrent == 'WorkCapacityCircle' && !document.querySelector('.WorkCapacityCircle svg')) {
-            WorkCircle = CreateHudWork('WorkCapacityCircle', `rgb(64,64,64)`, 'rgb(225,225,225)');
+            WorkCircle = CreateHudWork('WorkCapacityCircle', `rgb(127,127,127)`, 'rgb(225,225,225)');
             WorkCircle.animate(0.78);
         }
 
