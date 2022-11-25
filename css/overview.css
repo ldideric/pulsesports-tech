@@ -1,3 +1,7 @@
+body {
+    background-color: var(--background);
+}
+
 hr {
     margin: auto !important;
     margin-top: 2vh !important;
@@ -7,21 +11,32 @@ hr {
 
 hr:first-of-type {
     margin-top: 1vh !important;
+    
+}
+
+.appendhere {
+    background-color: var(--background);
 }
 
 
 
 #date {
     margin-left: 8vw;
-    margin-top: 4vh;
+    padding-top: 4vh;
     font-weight: 400;
     font-size: 1.54vh;
+
+    background-color: var(--background);
+
+    color: var(--regulartext);
 }
 
 #title {
     margin-left: 8vw;
     font-weight: 800;
     font-size: 3.44vh;
+
+    color: var(--regulartext);
 }
 
 .stats {
@@ -46,6 +61,8 @@ hr:first-of-type {
     margin-top: 1vh;
     font-size: 6vw;
     text-align: start;
+    
+    color: var(--regulartext);
 }
 
 .circlestat {
@@ -69,6 +86,8 @@ hr:first-of-type {
     margin-top: 1vh;
     font-size: 8vw;
     text-align: start;
+    
+    color: var(--regulartext);
 }
 
 .halfcirclestat {
@@ -108,6 +127,9 @@ hr:first-of-type {
 .short-statistics .title {
     font-weight: 700;
     font-size: 3.6vw;
+
+    
+    color: var(--regulartext);
 }
 
 .short-statistics .info {
@@ -134,6 +156,7 @@ hr:first-of-type {
     /* padding-left: 0.5vw; */
     font-size: 7vw;
     font-weight: bold;
+    color: var(--regulartext);
 }
 
 .div-2 #circlegen {
@@ -155,6 +178,8 @@ hr:first-of-type {
 .main-content {
     bottom: 15%;
     top: 5%;
+
+    background-color: var(--background);
 }
 
 .div-3 .stat-container {
@@ -174,6 +199,7 @@ hr:first-of-type {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    color: var(--regulartext);
 }
 
 .div-3 #circlegen {
@@ -190,4 +216,9 @@ hr:first-of-type {
     height: 1vh !important;
     width: 1.1vh !important;
     border-radius: 100% !important;
+}
+
+.carousel {
+    fill: var(--regulartext) !important;
+    color: var(--regulartext) !important;
 }
