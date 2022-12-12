@@ -19,5 +19,4 @@ Made by: <br>
 [![portfolio](https://img.shields.io/badge/Lietze_Diderich-00C04B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ldideric/)<br>
 [![portfolio](https://img.shields.io/badge/Finn_Groenewoud-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/F1nnG/)<br>
 [![portfolio](https://img.shields.io/badge/Kian_Acquoy-A020F0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kianacquoy/)<br>
-[![portfolio](https://img.shields.io/badge/Quinten_Van_Der_Laan-123456?style=for-the-badge&logo=github&logoColor=white)](https://github.com/djquinten/)<br>
-[![portfolio](https://img.shields.io/badge/Collin_Pickkers-FF0000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thundersmite/)
+[![portfolio](https://img.shields.io/badge/Quinten_Van_Der_Laan-123456?style=for-the-badge&logo=github&logoColor=white)](https://github.com/djquinten/)
