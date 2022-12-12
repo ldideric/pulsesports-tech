@@ -1,17 +1,14 @@
 # PULSE Sport
 
-A Progressive Web App made in a project week at the Bit Academy.
-
-The Web application can be used on mobile phones,
-and on browsers that can resize to mobile resolutions.
+A Progressive Web App made in a project week at the Bit Academy. The Web application can be used on mobile phones and on browsers that can resize to mobile resolutions.
 
 ## Getting Started
 
-To start clone the repository:\
-`git clone git@github.com:ldideric/pulsesports-tech.git`\
-You can open the app on your computer by hosting the site on a server, or using the VSCode Extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+To start, clone the repository:
+`git clone git@github.com:ldideric/pulsesports-tech.git`
+You can open the app on your computer by hosting the site on a server, or using the VSCode Extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-You can add the site as a Progressive Web App in your browser, and access the site as an app.
+To access the app as a Progressive Web App, you can add it to your browser and access it like you would any other app on your device. This allows you to use the app without having to open a browser and visit the site each time. With the PULSE Sport PWA, you can easily keep track of your health insights.
 
 ## 🔗 Credits
 
